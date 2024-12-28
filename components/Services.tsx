@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/card'; // Asegúrate de que C
 
 const Services = () => {
   return (
-    <main className="flex min-h-screen flex-col bg">
+    <main id='servicios' className="flex min-h-screen flex-col bg">
       {/* Services Section */}
       <section id="services" className="h-screen py-20 px-4 bg-slate-900">
         <div className="w-full mx-auto">
