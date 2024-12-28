@@ -1,32 +1,98 @@
-import { services } from '@/constant'; // Asegúrate de importar correctamente desde la carpeta constant
-import { Card, CardContent } from '@/components/ui/card'; // Asegúrate de que Card y CardContent estén correctamente importados
+"use client";
 
-const Services = () => {
-  return (
-    <main id='servicios' className="flex min-h-screen flex-col bg">
-      {/* Services Section */}
-      <section id="services" className="h-screen py-20 px-4 bg-slate-900">
-        <div className="w-full mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-white">Nuestros Servicios</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => (
-              <Card
-                key={index}
-                className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-transform duration-300 transform hover:-translate-y-2 border-l-4 border-primary"
-              >
-                <CardContent className="pt-6 text-center">
-                  <div className="flex justify-center">{service.icon}</div>
-                  <h3 className="text-xl font-semibold mt-4 mb-2 text-black">{service.title}</h3>
-                  <p className="text-muted-foreground text-black font-medium">{service.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-    </main>
-  );
+import { services } from "@/constant";
+import { Card, CardContent } from "@/components/ui/card";
+import Slider from "react-slick";
+import { cn } from "@/lib/utils";
+
+const sliderSettings = {
+  arrows: false,
+  autoplay: false,
+  infinite: true,
+  speed: 1000,
+  autoplaySpeed: 0,
+  cssEase: "linear",
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  pauseOnHover: true,
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 };
 
-export default Services;
+export function ServicesSlider() {
+  return (
+    <section
+      id="servicios"
+      className="bg-hands bg-cover bg-center bg-no-repeat min-h-screen pt-24 pb-16 px-4 sm:pt-32 sm:pb-24"
+    >
+      <div className="container px-4 mx-auto pb-11">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold tracking-tight mb-2 text-white">
+            Nuestros Servicios
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-white">
+            Descubre nuestra gama completa de servicios profesionales diseñados para satisfacer tus necesidades
+          </p>
+        </div>
+        
+        <div className="relative">
+          <Slider {...sliderSettings} className="services-slider">
+            {services.map((service, index) => (
+              <div key={index} className="px-4 py-2">
+                <Card className={cn(
+                  "h-[380px] bg-card transition-all duration-300",
+                  "hover:shadow-lg hover:scale-[1.02]",
+                  "border-t-4 border-t-primary"
+                )}>
+                  <CardContent className="p-6 flex flex-col h-full">
+                    <div className="mb-6 flex justify-center">
+                      <div className="p-4 rounded-full bg-primary/10">
+                        {service.icon}
+                      </div>
+                    </div>
+                    
+                    <h3 className="text-xl font-semibold mb-4 text-center">
+                      {service.title}
+                    </h3>
+                    
+                    <p className="text-muted-foreground text-center flex-grow">
+                      {service.description}
+                    </p>
+                    
+                    <div className="mt-6 pt-6 border-t border-border ">
+                      <div className="flex justify-center">
+                        {/* <button className="text-primary hover:text-primary/80 font-medium">
+                          Más información → 
+                        </button> */}
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </div>
+    </section>
+  );
+}
 
+  

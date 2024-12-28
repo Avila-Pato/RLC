@@ -3,7 +3,7 @@ import CompanyProfile from "@/components/CompanyProfile";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/NavBar";
-import Services from "@/components/Services";
+import { ServicesSlider } from "@/components/Services";
 
 
 
@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <CompanyProfile />
-      <Services />
+      <ServicesSlider />
       <Clients />
       <Footer />
     </div>
