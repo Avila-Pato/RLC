@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { Zap } from "lucide-react";
+
 
 const Hero = () => {
   return (
@@ -6,12 +8,14 @@ const Hero = () => {
       id="home"
       className="bg-hero bg-cover bg-center bg-no-repeat min-h-screen pt-24 pb-16 px-4 sm:pt-32 sm:pb-24"
     >
+      
       <div className="max-w-7xl mx-auto">
         <div className="text-left space-y-8">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight fade-in">
-            Excelencia en Ingeniería <br className="hidden sm:block" />
-            para tu Éxito
+            Excelencia en Ingeniería <br className="hidden sm:block" /> 
+            para tu Éxito 
           </h1>
+          <Zap className="h-12 w-12 text-blue-600 dark:text-blue-400" />
           <p className="max-w-2xl text-lg sm:text-xl text-white slide-up">
             Ofrecemos soluciones innovadoras de ingeniería que transforman ideas en realidad, entregando resultados excepcionales para nuestros clientes.
           </p>
@@ -30,3 +34,10 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+
+
+
+
+ 

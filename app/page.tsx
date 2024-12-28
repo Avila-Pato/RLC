@@ -1,9 +1,10 @@
+import { CallToAction } from "@/components/CalltoAction";
 import Clients from "@/components/Clients";
 import CompanyProfile from "@/components/CompanyProfile";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/NavBar";
-import { ServicesSlider } from "@/components/Services";
+import { Services } from "@/components/Services";
 
 
 
@@ -13,8 +14,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <CompanyProfile />
-      <ServicesSlider />
+      <Services />
       <Clients />
+      <CallToAction />
       <Footer />
     </div>
   );

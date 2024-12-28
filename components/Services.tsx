@@ -1,98 +1,62 @@
-"use client";
+// src/pages/index.tsx
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { Card, CardContent } from '@/components/ui/card';
+import { services } from '@/constant';
 
-import { services } from "@/constant";
-import { Card, CardContent } from "@/components/ui/card";
-import Slider from "react-slick";
-import { cn } from "@/lib/utils";
-
-const sliderSettings = {
-  arrows: false,
-  autoplay: false,
-  infinite: true,
-  speed: 1000,
-  autoplaySpeed: 0,
-  cssEase: "linear",
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  pauseOnHover: true,
-  responsive: [
-    {
-      breakpoint: 1280,
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 640,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-  ],
-};
-
-export function ServicesSlider() {
+export function Services() {
   return (
-    <section
-      id="servicios"
-      className="bg-hands bg-cover bg-center bg-no-repeat min-h-screen pt-24 pb-16 px-4 sm:pt-32 sm:pb-24"
-    >
-      <div className="container px-4 mx-auto pb-11">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold tracking-tight mb-2 text-white">
+    <div id='servicios' className="bg-white py-24 dark:bg-gray-900">
+      <div className="container mx-auto px-4">
+        <div className="mb-16 text-center">
+          <h2 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">
             Nuestros Servicios
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-white">
-            Descubre nuestra gama completa de servicios profesionales diseñados para satisfacer tus necesidades
+          <p className="mx-auto max-w-3xl text-lg text-gray-600 dark:text-gray-300">
+            Ofrecemos una amplia gama de servicios especializados en ingeniería
+            eléctrica y automatización industrial
           </p>
         </div>
-        
-        <div className="relative">
-          <Slider {...sliderSettings} className="services-slider">
-            {services.map((service, index) => (
-              <div key={index} className="px-4 py-2">
-                <Card className={cn(
-                  "h-[380px] bg-card transition-all duration-300",
-                  "hover:shadow-lg hover:scale-[1.02]",
-                  "border-t-4 border-t-primary"
-                )}>
-                  <CardContent className="p-6 flex flex-col h-full">
-                    <div className="mb-6 flex justify-center">
-                      <div className="p-4 rounded-full bg-primary/10">
-                        {service.icon}
-                      </div>
+
+        <Carousel
+          opts={{
+            align: 'start',
+            loop: true,
+          }}
+          className="mx-auto max-w-6xl"
+        >
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {services.map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <CarouselItem
+                  key={index}
+                  className="pl-2 md:basis-1/2 lg:basis-1/3 md:pl-4"
+                >
+                  <Card className="overflow-hidden">
+                    <div className="relative h-48">
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="h-full w-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                      <Icon className="absolute bottom-4 right-4 h-8 w-8 text-white" />
                     </div>
-                    
-                    <h3 className="text-xl font-semibold mb-4 text-center">
-                      {service.title}
-                    </h3>
-                    
-                    <p className="text-muted-foreground text-center flex-grow">
-                      {service.description}
-                    </p>
-                    
-                    <div className="mt-6 pt-6 border-t border-border ">
-                      <div className="flex justify-center">
-                        {/* <button className="text-primary hover:text-primary/80 font-medium">
-                          Más información → 
-                        </button> */}
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            ))}
-          </Slider>
-        </div>
+                    <CardContent className="p-6">
+                      <h3 className="mb-2 text-xl font-semibold">{service.title}</h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-300">
+                        {service.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              );
+            })}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
+        </Carousel>
       </div>
-    </section>
+    </div>
   );
 }
-
-  
