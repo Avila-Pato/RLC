@@ -1,9 +1,4 @@
-import { FaCog, FaLightbulb, FaBuilding, FaUsers } from 'react-icons/fa';
 import { Cpu, Settings2, Zap, Cable, Network, Factory } from 'lucide-react';
-
-
-
-// src/data/services.ts
 
 
 export const services = [
@@ -12,7 +7,7 @@ export const services = [
     title: 'Automatización Industrial',
     description:
       'Sistemas de control avanzados y soluciones de automatización personalizadas',
-    image: "/assets/Perfil1jpg.jpg",
+    c: "/assets/Perfil1jpg.jpg",
   },
   {
     icon: Settings2,

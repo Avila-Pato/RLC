@@ -54,7 +54,6 @@ export default {
             },
             backgroundImage: {
                 hero: "url('https://rlcengineering.my.canva.site/rlcengineeringspa/images/b0e1c342bf61ba107b8fb4a36a1dd95b.png')", // URL de tu imagen
-                hands: "url('/assets/R.jpg')",
             },
             screens: {
                 xs: '400px',
