@@ -7,7 +7,7 @@ export const services = [
     title: 'Automatización Industrial',
     description:
       'Sistemas de control avanzados y soluciones de automatización personalizadas',
-    c: "/assets/Perfil1jpg.jpg",
+    image: "/assets/Perfil1jpg.jpg",
   },
   {
     icon: Settings2,
