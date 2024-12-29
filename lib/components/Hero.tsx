@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="bg-hero bg-cover bg-center bg-no-repeat min-h-screen pt-24 pb-16 px-4 sm:pt-32 sm:pb-24"
+            className="relative bg-hero bg-cover bg-center bg-no-repeat min-h-screen pt-24 pb-16 px-4 sm:pt-32 sm:pb-24"
         >
             <div className="max-w-7xl mx-auto">
                 <div className="text-left space-y-8">
@@ -33,9 +33,12 @@ const Hero = () => {
                         >
                             Leer más..
                         </Button>
-                    </div>
+                    </div>{' '}
                 </div>
             </div>
+            <h1 className="absolute shadow-2xl font-bold text-lg sm:text-2xl lg:text-3xl  text-white bottom-[-50px] z-[100] w-[400px] sm:w-[500px]  lg:w-[800px] h-[100px] left-1/2 transform -translate-x-1/2  bg-blue-500 text-darkred rounded-full flex justify-center items-center">
+                Nuestros Servicios
+            </h1>
         </section>
     )
 }

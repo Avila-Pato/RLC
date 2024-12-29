@@ -6,18 +6,16 @@ import Navbar from '../lib/components/NavBar'
 import { Services } from '@/lib/components/Services'
 import Testimony from '@/lib/components/Testimony'
 
-
-
 export default function Home() {
-  return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <Hero />
-      <CompanyProfile />
-      <Services />
-      <Testimony />
-      <CallToAction />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="min-h-screen bg-white">
+            <Navbar />
+            <Hero />
+            <Services />
+            <CompanyProfile />
+            <Testimony />
+            <CallToAction />
+            <Footer />
+        </div>
+    )
 }

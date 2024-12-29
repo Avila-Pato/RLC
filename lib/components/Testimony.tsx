@@ -4,15 +4,14 @@ import React from 'react'
 import Slider from 'react-slick'
 import { RiDoubleQuotesR } from 'react-icons/ri'
 import Image from 'next/image'
-import { FaBullseye } from 'react-icons/fa6'
 
 // Configuración de Slider
 const sliderSettings = {
     arrows: false,
-    autoplay: true, 
+    autoplay: true,
     infinite: true,
     dots: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -35,10 +34,10 @@ const Clients = () => {
     return (
         <section
             id="clientes"
-            className="min-h-screen w-full py-16 relative flex flex-col justify-center"
+            className="min-h-screen py-16 relative flex flex-col justify-center"
         >
             <h3 className="font-bold text-3xl text-center  ">Testimonios</h3>
-            <p className="text-center text-gray-500 py-6 max-w-lg mx-auto mt">
+            <p className="text-center text-gray-500 py-6 max-w-lg mx-auto mt-2">
                 Desde nuestros inicios, hemos brindado un servicio confiable a
                 nuestra clientela. A lo largo de los años, hemos trabajado con
                 dedicación para entender y satisfacer las necesidades de cada
@@ -48,7 +47,7 @@ const Clients = () => {
                 satisfacción total.
             </p>
 
-            <Slider {...sliderSettings} className="bg-slate-500 ">
+            <Slider {...sliderSettings}>
                 {TESTIMONIAL.map((testimonial) => (
                     <TestimonialItem
                         key={testimonial.title}
@@ -77,12 +76,11 @@ const TestimonialItem = ({
     des,
 }: TestimonialItemProps) => {
     return (
-        
-        <div className=" px-6 my-8 py-20  mx-auto w-5/6 sm:w-11/12 lg:w-11/12 xl:w-10/12 2xl:w-8/12
+        <div
+            className=" px-6 my-8 py-20  mx-auto w-5/6 sm:w-11/12 lg:w-11/12 xl:w-10/12 2xl:w-8/12
         h-96 rounded-md bg-slate-200 shadow-lg z-20 transition-all duration-500 ease-in-out transform
-          hover:scale-105 relative ">
-
-
+          hover:scale-105 relative "
+        >
             <span className="text-slate-400 text-9xl absolute top-0 right-4 -z-10 opacity-60">
                 <RiDoubleQuotesR />
             </span>
