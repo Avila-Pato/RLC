@@ -1,3 +1,4 @@
+import { Zap } from 'lucide-react'
 import { Button } from './ui/button'
 
 const Hero = () => {
@@ -13,6 +14,7 @@ const Hero = () => {
                         <br className="hidden sm:block" />
                         para tu Éxito
                     </h1>
+                    <Zap className="h-12 w-12 text-blue-600 dark:text-blue-400" />
                     <p className="max-w-2xl text-lg sm:text-xl text-white slide-up">
                         Ofrecemos soluciones innovadoras de ingeniería que
                         transforman ideas en realidad, entregando resultados

@@ -72,6 +72,37 @@
   transform: translateY(-10px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+/* Scrool behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* navbar behavior */
+.nav__link {
+  position: relative;
+  color: var(--text-color-light, white); /* Color del texto */
+  font-weight: 500; /* Peso de la fuente */
+  font-family: var(--second-font, sans-serif); /* Fuente secundaria */
+  text-decoration: none;
+}
+
+.nav__link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: var(--text-color-light, hsl(0, 0%, 60%)); 
+  position: absolute;
+  left: 0;
+  bottom: -4px; 
+  transition: width 0.3s ease-in-out; 
+  --text-color-light: hsl(0, 0%, 60%);
+}
+
+.nav__link:hover::after {
+  width: 100%; 
+}
+
+
 
 
 @keyframes fadeIn {

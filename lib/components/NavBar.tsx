@@ -37,7 +37,7 @@ const Navbar = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-white hover:text-accent transition-colors duration-300"
+                className="nav__link"
               >
                 {item.label}
               </a>
@@ -56,7 +56,7 @@ const Navbar = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-white hover:text-accent transition-colors duration-300"
+                className="nav__link"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
