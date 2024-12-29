@@ -1,27 +1,56 @@
 import { FaCog, FaLightbulb, FaBuilding, FaUsers } from 'react-icons/fa';
+import { Cpu, Settings2, Zap, Cable, Network, Factory } from 'lucide-react';
+
+
+
+// src/data/services.ts
+
 
 export const services = [
   {
-    icon: <FaCog className="w-12 h-12 text-black mb-4" size={40}  />,
-    title: "Proyectos Eléctricos",
-    description: "Diseño y ejecución de sistemas eléctricos ​industriales.",
+    icon: Cpu,
+    title: 'Automatización Industrial',
+    description:
+      'Sistemas de control avanzados y soluciones de automatización personalizadas',
+    image: "/assets/Perfil1jpg.jpg",
   },
   {
-    icon: <FaLightbulb className="w-12 h-12 text-black mb-4" size={40}  />,
-    title: "Automatización",
-    description: "Optimización de procesos industriales.",
+    icon: Settings2,
+    title: 'Mantenimiento Predictivo',
+    description:
+      'Servicios de mantenimiento preventivo y predictivo para equipos industriales',
+    image: "/assets/Perfil2.jpg",
   },
   {
-    icon: <FaBuilding className="w-12 h-12 text-black mb-4"  size={40} />,
-    title: "Mantenimiento",
-    description: "Servicios preventivos y correctivos.",
+    icon: Zap,
+    title: 'Instalaciones Eléctricas',
+    description:
+      'Diseño e implementación de sistemas eléctricos industriales',
+    image: "/assets/Perfil3.jpg",
   },
   {
-    icon: <FaUsers className="w-12 h-12 text-black mb-4" size={40}  />,
-    title: "Venta luminaria led",
-    description: "Productos iluminación led",
+    icon: Cable,
+    title: 'Cableado Estructurado',
+    description:
+      'Soluciones de cableado y redes para entornos industriales',
+    image: "/assets/Perfil4.jpg",
+  },
+  {
+    icon: Network,
+    title: 'Redes Industriales',
+    description:
+      'Implementación y mantenimiento de redes de comunicación industrial',
+    image: "/assets/Perfil5jpg.jpg",
+  },
+  {
+    icon: Factory,
+    title: 'Integración de Sistemas',
+    description:
+      'Integración de sistemas y equipos para optimizar procesos industriales',
+    image: "/assets/Perfil6jpg.jpg",
   },
 ];
+
 
 
 
