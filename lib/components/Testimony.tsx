@@ -4,24 +4,26 @@ import React from 'react'
 import Slider from 'react-slick'
 import { RiDoubleQuotesR } from 'react-icons/ri'
 import Image from 'next/image'
+import { FaBullseye } from 'react-icons/fa6'
 
 // Configuración de Slider
 const sliderSettings = {
     arrows: false,
-    autoplay: true,
+    autoplay: true, 
     infinite: true,
+    dots: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 1280,
+            breakpoint: 1291,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 3,
             },
         },
         {
-            breakpoint: 640,
+            breakpoint: 767,
             settings: {
                 slidesToShow: 1,
             },
@@ -33,10 +35,10 @@ const Clients = () => {
     return (
         <section
             id="clientes"
-            className="min-h-screen w-full py-16  relative flex flex-col justify-center "
+            className="min-h-screen w-full py-16 relative flex flex-col justify-center"
         >
-            <h3 className="font-bold text-3xl text-center">Testimonios</h3>
-            <p className="text-center text-gray-500 py-6 max-w-lg mx-auto">
+            <h3 className="font-bold text-3xl text-center  ">Testimonios</h3>
+            <p className="text-center text-gray-500 py-6 max-w-lg mx-auto mt">
                 Desde nuestros inicios, hemos brindado un servicio confiable a
                 nuestra clientela. A lo largo de los años, hemos trabajado con
                 dedicación para entender y satisfacer las necesidades de cada
@@ -46,10 +48,7 @@ const Clients = () => {
                 satisfacción total.
             </p>
 
-            <Slider
-                {...sliderSettings}
-                className="bg-slate-500"
-            >
+            <Slider {...sliderSettings} className="bg-slate-500 ">
                 {TESTIMONIAL.map((testimonial) => (
                     <TestimonialItem
                         key={testimonial.title}
@@ -78,11 +77,16 @@ const TestimonialItem = ({
     des,
 }: TestimonialItemProps) => {
     return (
-        <div className="px-6 mx-16 my-8 py-16 rounded-md bg-white shadow-lg z-20 transition-all duration-500 ease-in-out transform hover:scale-105 relative">
+        
+        <div className=" px-6 my-8 py-20  mx-auto w-5/6 sm:w-11/12 lg:w-11/12 xl:w-10/12 2xl:w-8/12
+        h-96 rounded-md bg-slate-200 shadow-lg z-20 transition-all duration-500 ease-in-out transform
+          hover:scale-105 relative ">
+
+
             <span className="text-slate-400 text-9xl absolute top-0 right-4 -z-10 opacity-60">
                 <RiDoubleQuotesR />
             </span>
-            <p className="text-gray-950 text-center">{des}</p>
+            <p className=" text-gray-950 text-center">{des}</p>
             <div className="flex justify-center gap-4 mt-4">
                 <Image
                     src={URL}

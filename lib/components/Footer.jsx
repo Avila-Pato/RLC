@@ -11,7 +11,6 @@ import Image from 'next/image'
 const Footer = () => {
     return (
         <footer
-            id="contacto"
             className="bg-primary text-white pt-12 pb-6"
         >
             <div className="container mx-auto px-4">
@@ -72,7 +71,10 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="absolute right-0 pt-24 flex space-x-4 scale-50">
+                        <div className=' absolute container  px-4 flex justify-end  '>
+
+                      
+                    <div className="absolute  pt-24 flex space-x-2 scale-50 lg:pt-24 md:scale-90 sm:scale-75  justify-center md:2xl: ">
                         <Image
                             src="/assets/Logo.png"
                             alt="LogoEmpresa"
@@ -88,6 +90,8 @@ const Footer = () => {
                             width={100}
                             height={100}
                         ></Image>
+                    </div>
+
                     </div>
 
                     <div>

@@ -5,7 +5,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 export function Services() {
   return (
-    <div id='servicios' className="bg-white py-24 dark:bg-gray-900">
+    <div id='servicios' className="bg-white py-16 dark:bg-gray-900 ">
       <div className="container mx-auto px-4">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">

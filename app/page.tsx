@@ -1,10 +1,10 @@
 import { CallToAction } from '@/lib/components/CalltoAction'
-import Clients from '../lib/components/Clients'
 import CompanyProfile from '../lib/components/CompanyProfile'
 import Footer from '../lib/components/Footer'
 import Hero from '../lib/components/Hero'
 import Navbar from '../lib/components/NavBar'
 import { Services } from '@/lib/components/Services'
+import Testimony from '@/lib/components/Testimony'
 
 
 
@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
       <CompanyProfile />
       <Services />
-      <Clients />
+      <Testimony />
       <CallToAction />
       <Footer />
     </div>

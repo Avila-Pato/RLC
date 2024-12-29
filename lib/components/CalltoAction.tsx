@@ -3,7 +3,7 @@ import { Card } from "./ui/card";
 
 export function CallToAction() {
   return (
-    <div className="bg-blue-50 py-24 dark:bg-gray-800">
+    <div  id="contacto" className="bg-blue-50 py-24 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <Card className="overflow-hidden bg-gradient-to-r from-blue-600 to-blue-800 text-white">
           <div className="relative px-8 py-16">

@@ -56,7 +56,7 @@ const Navbar = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="nav__link"
+                className="nav__menu"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}

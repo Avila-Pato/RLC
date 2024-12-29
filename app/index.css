@@ -102,6 +102,42 @@ html {
   width: 100%; 
 }
 
+.nav__menu {
+  position: relative;
+  color: var(--text-color-light, white);
+  font-weight: 500;
+  font-family: var(--second-font, sans-serif);
+  text-decoration: none;
+}
+
+.nav__menu .nav__link {
+  display: inline-block; /* Asegura que cada enlace tenga un ancho del texto */
+  position: relative;
+}
+
+.nav__menu .nav__link::after {
+  content: "";
+  width: 0; /* Empieza con un ancho de 0 */
+  height: 3px;
+  background-color: var(--text-color-light, hsl(0, 0%, 60%));
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav__menu .nav__link:hover::after {
+  width: 100%; /* Ajusta el ancho de la línea al del enlace */
+}
+
+/* Opcional: Para el menú en dispositivos móviles */
+@media (max-width: 767px) {
+  .nav__menu .nav__link::after {
+    bottom: -2px; /* Ajuste fino para que la línea esté más cerca del texto en móviles */
+  }
+}
+
+
 
 
 
