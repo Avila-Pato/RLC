@@ -13,15 +13,12 @@ import Image from 'next/image'
 export function Services() {
     return (
         <div
-            // id="servicios"
+            id="servicios"
             className="bg-white py-16 dark:bg-gray-900  "
         >
             <div className="container mx-auto px-4">
                 <div className="mb-16 text-center">
-                    {/* <h2 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">
-                        Nuestros Servicios
-                    </h2> */}
-                    <p className="mx-auto max-w-3xl text-lg text-gray-600 dark:text-gray-300">
+                    <p className="mx-auto tracking-tight text-left lg:text-center max-w-3xl text-lg text-gray-800 dark:text-gray-300 poppins">
                     Ofrecemos una amplia gama de servicios especializados en ingeniería eléctrica y 
                     automatización industrial, brindando soluciones innovadoras y eficientes que optimizan
                      procesos, mejoran la productividad y se adaptan a las necesidades específicas de cada cliente. Nos destacamos por nuestro compromiso con la calidad y el soporte técnico personalizado.

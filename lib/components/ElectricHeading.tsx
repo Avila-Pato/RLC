@@ -1,15 +1,16 @@
 const ElectricHeading = () => {
     return (
-        <div className="relative">
+        <div 
+        className="relative">
             <h2
-                id="servicios"
+              
                 className="
                 absolute 
                 bottom-[-50px] 
                 left-1/2 
                 transform 
                 -translate-x-1/2
-                w-[400px] 
+                w-[300px] 
                 sm:w-[500px] 
                 lg:w-[800px] 
                 py-6

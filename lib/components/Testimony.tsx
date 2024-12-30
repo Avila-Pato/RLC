@@ -33,11 +33,13 @@ const sliderSettings = {
 const Clients = () => {
     return (
         <section
-            id="clientes"
-            className="min-h-screen py-16 relative flex flex-col justify-center"
+        
+           
+            className=" relative flex flex-col justify-center"
+             id="clientes"
         >
-            <h3 className="font-bold text-3xl text-center  ">Testimonios</h3>
-            <p className="text-center text-gray-500 py-6 max-w-lg mx-auto mt-2">
+            <h3  className="font-bold text-3xl text-center ">Testimonios</h3>
+            <p className="text-left tracking-tight lg:text-center sm:text-center text-gray-800 max-w-3xl mx-auto py-3 m-7 scale-95 sm:w-1/2  poppins ">
                 Desde nuestros inicios, hemos brindado un servicio confiable a
                 nuestra clientela. A lo largo de los años, hemos trabajado con
                 dedicación para entender y satisfacer las necesidades de cada
@@ -97,7 +99,7 @@ const TestimonialItem = ({
             <div className="text-lg   text-center mt-4">
                 {title}
             </div>
-            <div className="text-gray-400 text-sm text-center ">
+            <div className="text-gray-500 text-sm text-center ">
                 {profession}
             </div>
         </div>

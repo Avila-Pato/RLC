@@ -1,3 +1,4 @@
+"use client"
 import { Zap } from 'lucide-react'
 import { Button } from './ui/button'
 import ElectricHeading from './ElectricHeading'
@@ -28,12 +29,15 @@ const Hero = () => {
                         construir el mañana.
                     </p>
                     <div className="flex justify-start gap-4 slide-up mt-6">
-                        <Button
+                        <Button 
+                            id='servicios'
                             size="lg"
                             className="px-8"
+                            onClick={() => document.getElementById('servicios')?.scrollIntoView({ behavior: 'smooth'})}
                         >
                             Leer más..
                         </Button>
+
                     </div>{' '}
                 </div>
             </div>
