@@ -1,7 +1,9 @@
 const ElectricHeading = () => {
     return (
         <div className="relative">
-            <h1  id="servicios" className="
+            <h2
+                id="servicios"
+                className="
                 absolute 
                 bottom-[-50px] 
                 left-1/2 
@@ -29,7 +31,6 @@ const ElectricHeading = () => {
                 backdrop-blur-sm
                 transition-all
                 duration-100
-                hover:scale-105
                 hover:shadow-[0_0_30px_rgba(234,88,12,0.7)]
                 hover:from-orange-900
                 hover:to-red-900
@@ -38,21 +39,12 @@ const ElectricHeading = () => {
                 before:absolute
                 before:inset-0
                 before:border-orange-400/5
-                before:rounded-full
-                before:animate-border-dissolve
-                after:absolute
-                after:w-32
-                after:h-full
-                after:bg-gradient-to-r
-                after:from-transparent
-                after:via-orange-300/40
-                after:to-transparent
-                after:animate-spark
-            ">
-                <span  className="relative z-10">Nuestros Servicios</span>
-            </h1>
+            "
+            >
+                <span className="relative z-10">Nuestros Servicios</span>
+            </h2>
         </div>
-    );
-};
+    )
+}
 
-export default ElectricHeading;
+export default ElectricHeading
