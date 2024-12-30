@@ -39,7 +39,7 @@ const Clients = () => {
              id="clientes"
         >
             <h3  className="font-bold text-3xl text-center ">Testimonios</h3>
-            <p className="text-left tracking-tight lg:text-center sm:text-center text-gray-800 max-w-3xl mx-auto py-3 m-7 scale-95 sm:w-1/2  poppins ">
+            <p className="text-left tracking-tight lg:text-center sm:text-center text-gray-800 max-w-2xl mx-auto py-3 m-7 scale-95 sm:w-1/2 text-lg  poppins ">
                 Desde nuestros inicios, hemos brindado un servicio confiable a
                 nuestra clientela. A lo largo de los años, hemos trabajado con
                 dedicación para entender y satisfacer las necesidades de cada

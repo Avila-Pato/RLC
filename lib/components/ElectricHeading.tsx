@@ -20,8 +20,8 @@ const ElectricHeading = () => {
                 font-bold 
                 text-white
                 bg-gradient-to-r 
-                from-orange-900
-                to-red-900
+               from-[#D3B89D] 
+               to-[#A5784C]
                 rounded-full 
                 flex 
                 justify-center 
@@ -33,8 +33,8 @@ const ElectricHeading = () => {
                 transition-all
                 duration-100
                 hover:shadow-[0_0_30px_rgba(234,88,12,0.7)]
-                hover:from-orange-900
-                hover:to-red-900
+                from-[#D1C7B7] 
+                to-[#B38B4C]
                 overflow-hidden
                 before:content-['']
                 before:absolute
