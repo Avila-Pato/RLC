@@ -9,13 +9,13 @@ import {
   
   const Footer = () => {
     return (
-      <footer className="bg-primary text-white pt-12 pb-6">
-        <div className="container mx-auto px-4">
+      <footer className="bg-primary text-white pt-12 pb-6 ">
+        <div className="container mx-auto px-4 ">
           <Accordion type="single" collapsible className="w-full mb-8">
             <AccordionItem value="item-1">
-              <AccordionTrigger>Nuestras redes sociales</AccordionTrigger>
+              <AccordionTrigger className="text-2xl">Nuestras redes sociales</AccordionTrigger>
               <AccordionContent>
-                <p className="text-gray-300 mb-4">
+                <p className="text-gray-300 mb-4 text-2xl">
                   Soluciones en electricidad industrial y automatización para su empresa.
                 </p>
                 <div className="flex space-x-4">
@@ -47,31 +47,31 @@ import {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>Contacto</AccordionTrigger>
+              <AccordionTrigger className="text-2xl">Contacto</AccordionTrigger>
               <AccordionContent>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <MapPin size={20} />
-                    <span>Los Mimbreros 5729, Peñalolén Santiago de Chile</span>
+                    <span className="text-2xl">Los Mimbreros 5729, Peñalolén Santiago de Chile</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone size={20} />
-                    <span>+569-6519-4137</span>
-                    <span>-</span>
-                    <span> +569-8746-9460</span>
+                    <span className="text-2xl">+569-6519-4137</span>
+                    <span className="text-2xl">-</span>
+                    <span className="text-2xl"> +569-8746-9460</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail size={20} />
-                    <span>rlc.engineering.spa@gmail.com</span>
+                    <span className="text-2xl">rlc.engineering.spa@gmail.com</span>
                   </div>
                 </div>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Horario de Atención</AccordionTrigger>
+              <AccordionTrigger className="text-2xl">Horario de Atención</AccordionTrigger>
               <AccordionContent>
-                <p className="text-gray-300">Lunes a Viernes</p>
-                <p className="text-gray-300">8:30 AM - 18:30 PM</p>
+                <p className="text-gray-300 text-xl">Lunes a Viernes</p>
+                <p className="text-gray-300 text-xl">8:30 AM - 18:30 PM</p>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
