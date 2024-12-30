@@ -1,9 +1,9 @@
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-  } from "@/components/ui/accordion"
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion"
   import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react'
   import Image from 'next/image'
   

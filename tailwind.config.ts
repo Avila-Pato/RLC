@@ -53,7 +53,7 @@ export default {
     			sm: 'calc(var(--radius) - 4px)'
     		},
     		backgroundImage: {
-    			hero: 'url('https://rlcengineering.my.canva.site/rlcengineeringspa/images/b0e1c342bf61ba107b8fb4a36a1dd95b.png')'
+		 hero: "url('/assets/hero.png')"
     		},
     		screens: {
     			xs: '400px',

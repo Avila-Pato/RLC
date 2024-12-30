@@ -130,12 +130,7 @@ html {
   width: 100%; /* Ajusta el ancho de la línea al del enlace */
 }
 
-/* Opcional: Para el menú en dispositivos móviles */
-@media (max-width: 767px) {
-  .nav__menu .nav__link::after {
-    bottom: -2px; /* Ajuste fino para que la línea esté más cerca del texto en móviles */
-  }
-}
+
 
 
 
