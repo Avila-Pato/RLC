@@ -2,7 +2,7 @@ import { Card } from "./ui/card";
 
 const CompanyProfile = () => {
   return (
-    <section id="perfil" className="bg-gradient-to-b from-blue-50 to-white py-24 dark:from-gray-900 dark:to-gray-800">
+    <section id="nosotros" className="bg-gradient-to-b from-blue-50 to-white py-24 dark:from-gray-900 dark:to-gray-800">
     <div className="container mx-auto px-4">
       <div className="flex flex-col lg:flex-row items-center gap-12">
         {/* Imagen del perfil de la empresa */}

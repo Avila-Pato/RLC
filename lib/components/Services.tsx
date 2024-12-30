@@ -13,8 +13,8 @@ import Image from 'next/image'
 export function Services() {
     return (
         <div
-            id="servicios"
-            className="bg-white py-16 dark:bg-gray-900 "
+            // id="servicios"
+            className="bg-white py-16 dark:bg-gray-900  "
         >
             <div className="container mx-auto px-4">
                 <div className="mb-16 text-center">
@@ -22,8 +22,9 @@ export function Services() {
                         Nuestros Servicios
                     </h2> */}
                     <p className="mx-auto max-w-3xl text-lg text-gray-600 dark:text-gray-300">
-                        Ofrecemos una amplia gama de servicios especializados en
-                        ingeniería eléctrica y automatización industrial
+                    Ofrecemos una amplia gama de servicios especializados en ingeniería eléctrica y 
+                    automatización industrial, brindando soluciones innovadoras y eficientes que optimizan
+                     procesos, mejoran la productividad y se adaptan a las necesidades específicas de cada cliente. Nos destacamos por nuestro compromiso con la calidad y el soporte técnico personalizado.
                     </p>
                 </div>
 
@@ -34,7 +35,7 @@ export function Services() {
                     }}
                     className="mx-auto max-w-6xl"
                 >
-                    <CarouselContent className="-ml-2 md:-ml-4">
+                    <CarouselContent className="-ml-2 md:-ml-4 ">
                         {services.map((service, index) => {
                             const Icon = service.icon
                             return (
@@ -42,7 +43,7 @@ export function Services() {
                                     key={index}
                                     className="pl-2 md:basis-1/2 lg:basis-1/3 md:pl-4"
                                 >
-                                    <Card className="overflow-hidden">
+                                    <Card className="overflow-hidden hover:scale-105  transition-all duration-500 ease-in-out ">
                                         <div className="relative h-48">
                                             <Image
                                                 src={service.image}

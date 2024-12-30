@@ -63,6 +63,11 @@ export default {
             maxWidth: {
                 '10xl': '1512px',
             },
+            animation: {
+                'border-dissolve': 'border-dissolve 3s infinite',
+                'spark': 'spark 2s linear infinite',
+                'floating': 'floating 3s ease-in-out infinite',
+            },
         },
     },
     plugins: [require('tailwindcss-animate')],

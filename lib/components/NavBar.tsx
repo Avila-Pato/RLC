@@ -8,8 +8,8 @@ const Navbar = () => {
 
   const menuItems = [
     { label: "Inicio", href: "#" },
-    { label: "Perfil", href: "#perfil" },
     { label: "Servicios", href: "#servicios" },
+    { label: "Nosotros", href: "#nosotros" },
     { label: "Clientes", href: "#clientes" },
     { label: "Contacto", href: "#contacto" },
   ];

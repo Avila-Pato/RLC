@@ -84,7 +84,7 @@ const TestimonialItem = ({
             <span className="text-slate-400 text-9xl absolute top-0 right-4 -z-10 opacity-60">
                 <RiDoubleQuotesR />
             </span>
-            <p className=" text-gray-950 text-center">{des}</p>
+            <p className="  text-center font-semibold">{des}</p>
             <div className="flex justify-center gap-4 mt-4">
                 <Image
                     src={URL}
@@ -94,10 +94,10 @@ const TestimonialItem = ({
                     className="rounded-full object-cover"
                 />
             </div>
-            <div className="text-lg font-semibold text-center mt-4">
+            <div className="text-lg   text-center mt-4">
                 {title}
             </div>
-            <div className="text-gray-400 text-sm text-center">
+            <div className="text-gray-400 text-sm text-center ">
                 {profession}
             </div>
         </div>
