@@ -1,3 +1,4 @@
+import Video from "../hooks/Video";
 import { Card } from "./ui/card";
 
 const CompanyProfile = () => {
@@ -8,11 +9,7 @@ const CompanyProfile = () => {
         {/* Imagen del perfil de la empresa */}
         <article className="lg:w-1/2 w-full order-2 lg:order-1">
           <Card className="group overflow-hidden shadow-xl transition-all hover:shadow-2xl">
-            <img
-              src="/assets/Profile.jpeg"
-              alt="Imagen de ingeniería industrial"
-              className="w-full lg:max-w-7xl h-auto object-cover object-bottom transition-transform duration-300 group-hover:scale-105"
-            />
+            <Video />
           </Card>
         </article>
   

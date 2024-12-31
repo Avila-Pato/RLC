@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins, Raleway } from "next/font/google";
+import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,12 +20,6 @@ export const poppins = Poppins({
   weight: "400", // Peso normal para cuerpo
 });
 
-const raleway = Raleway({
-  variable: "--font-raleway",
-  subsets: ["latin"],
-  weight: "700", // Peso más pesado para títulos
-});
-
 export const metadata: Metadata = {
   title: "RLC ENGINEERING",
   description: "Industria especializada en Electricidad Industrial y Automatización",
@@ -39,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${raleway.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable}  antialiased`}
       >
         {children}
       </body>
