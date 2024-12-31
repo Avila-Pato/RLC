@@ -4,11 +4,12 @@ import React from 'react'
 import Slider from 'react-slick'
 import { RiDoubleQuotesR } from 'react-icons/ri'
 import Image from 'next/image'
+import { Card } from './ui/card'
 
 // Configuración de Slider
 const sliderSettings = {
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     infinite: true,
     dots: true,
     speed: 1000,
@@ -33,76 +34,56 @@ const sliderSettings = {
 const Clients = () => {
     return (
         <section
-        
-           
-            className=" relative flex flex-col justify-center"
-             id="clientes"
+            className="container mx-auto py-16"
+            id="clientes"
         >
-            <h3  className="font-bold text-3xl text-center ">Testimonios</h3>
-            <p className="text-left tracking-tight lg:text-center sm:text-center text-gray-800 max-w-2xl mx-auto py-3 m-7 scale-95 sm:w-1/2 text-lg  poppins ">
+            <h3 className="font-bold text-3xl text-center py-6 mt-5">
+                Nuestra lista de clientes
+            </h3>
+            <p className="text-base md:text-lg lg:text-xl text-left lg:text-center sm:text-center tracking-tight text-gray-800 mb-5 scale-95">
                 Desde nuestros inicios, hemos brindado un servicio confiable a
                 nuestra clientela. A lo largo de los años, hemos trabajado con
                 dedicación para entender y satisfacer las necesidades de cada
                 uno de nuestros clientes, asegurándonos de ofrecer soluciones de
-                calidad que generen confianza. Nuestra prioridad ha sido siempre
-                ofrecer un trato cercano y profesional, garantizando la
-                satisfacción total.
+                calidad que generen confianza.
             </p>
-
-            <Slider {...sliderSettings}>
-                {TESTIMONIAL.map((testimonial) => (
-                    <TestimonialItem
-                        key={testimonial.title}
-                        title={testimonial.title}
-                        des={testimonial.des}
-                        profession={testimonial.profesion}
-                        URL={testimonial.URL}
-                    />
-                ))}
-            </Slider>
+            <div className="flex justify-center">
+                <Slider
+                    {...sliderSettings}
+                    lazyLoad="progressive"
+                    centerMode
+                    responsive={sliderSettings.responsive}
+                    className="w-11/12 lg:w-4/5 "
+                >
+                    {TESTIMONIAL.map((testimonial, index) => (
+                        <Card
+                            key={index}
+                            className="p-6 m-4 h-[450px] lg:h-auto   bg-white shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300 ease-in-out"
+                        >
+                            <div className="flex flex-col items-center text-center">
+                                <Image
+                                    src={testimonial.URL}
+                                    alt={testimonial.title}
+                                    width={100}
+                                    height={100}
+                                    className="rounded-full mb-4"
+                                />
+                                <RiDoubleQuotesR className="text-gray-400 text-4xl mb-3" />
+                                <p className="text-gray-700 text-base mb-3">
+                                    {testimonial.des}
+                                </p>
+                                <h4 className="font-semibold text-lg text-gray-900">
+                                    {testimonial.title}
+                                </h4>
+                                <span className="text-sm text-gray-500">
+                                    {testimonial.profesion}
+                                </span>
+                            </div>
+                        </Card>
+                    ))}
+                </Slider>
+            </div>
         </section>
-    )
-}
-
-type TestimonialItemProps = {
-    des: string
-    title: string
-    URL: string
-    profession: string
-}
-
-const TestimonialItem = ({
-    title,
-    profession,
-    URL,
-    des,
-}: TestimonialItemProps) => {
-    return (
-        <div
-            className=" px-6 my-8 py-20  mx-auto w-5/6 sm:w-11/12 lg:w-11/12 xl:w-10/12 2xl:w-8/12
-        h-96 rounded-md bg-slate-200 shadow-lg z-20 transition-all duration-500 ease-in-out transform
-          hover:scale-105 relative "
-        >
-            <span className="text-slate-400 text-9xl absolute top-0 right-4 -z-10 opacity-60">
-                <RiDoubleQuotesR />
-            </span>
-            <p className="  text-center font-semibold">{des}</p>
-            <div className="flex justify-center gap-4 mt-4">
-                <Image
-                    src={URL}
-                    alt="user"
-                    height={60}
-                    width={60}
-                    className="rounded-full object-cover"
-                />
-            </div>
-            <div className="text-lg   text-center mt-4">
-                {title}
-            </div>
-            <div className="text-gray-500 text-sm text-center ">
-                {profession}
-            </div>
-        </div>
     )
 }
 

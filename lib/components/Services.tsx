@@ -12,63 +12,61 @@ import Image from 'next/image'
 
 export function Services() {
     return (
-        <div
+        <section
             id="servicios"
-            className="bg-white py-16 dark:bg-gray-900  "
+            className="container mx-auto px-4 py-20  bg-white dark:bg-gray-900 sm:w-full lg:w-3/4  "
         >
-            <div className="container mx-auto px-4">
-                <div className="mb-16 text-center">
-                    <p className="mx-auto tracking-tight text-left lg:text-center max-w-3xl text-lg text-gray-800 dark:text-gray-300 poppins">
-                    Ofrecemos una amplia gama de servicios especializados en ingeniería eléctrica y 
-                    automatización industrial, brindando soluciones innovadoras y eficientes que optimizan
-                     procesos, mejoran la productividad y se adaptan a las necesidades específicas de cada cliente. Nos destacamos por nuestro compromiso con la calidad y el soporte técnico personalizado.
-                    </p>
-                </div>
+            <p className="tracking-tight text-base md:text-lg lg:text-xl mt-4 mb-16 text-center">
+                Ofrecemos una amplia gama de servicios especializados en
+                ingeniería eléctrica y automatización industrial, brindando
+                soluciones innovadoras y eficientes que optimizan procesos,
+                mejoran la productividad y se adaptan a las necesidades
+                específicas de cada cliente. Nos destacamos por nuestro
+                compromiso con la calidad y el soporte técnico personalizado.
+            </p>
 
-                <Carousel
-                    opts={{
-                        align: 'start',
-                        loop: true,
-                    }}
-                    className="mx-auto max-w-6xl"
-                >
-                    <CarouselContent className="-ml-2 md:-ml-4 ">
-                        {services.map((service, index) => {
-                            const Icon = service.icon
-                            return (
-                                <CarouselItem
-                                    key={index}
-                                    className="pl-2 md:basis-1/2 lg:basis-1/3 md:pl-4"
-                                >
-                                    <Card className="overflow-hidden hover:scale-105  transition-all duration-500 ease-in-out ">
-                                        <div className="relative h-48">
-                                            <Image
-                                                src={service.image}
-                                                alt={service.title}
-                                                className="h-full w-full object-cover"
-                                                width={400}
-                                                height={400}
-                                            />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                                            <Icon className="absolute bottom-4 right-4 h-8 w-8 text-white" />
-                                        </div>
-                                        <CardContent className="p-6">
-                                            <h3 className="mb-2 text-xl font-semibold">
-                                                {service.title}
-                                            </h3>
-                                            <p className="text-sm text-gray-600 dark:text-gray-300">
-                                                {service.description}
-                                            </p>
-                                        </CardContent>
-                                    </Card>
-                                </CarouselItem>
-                            )
-                        })}
-                    </CarouselContent>
-                    <CarouselPrevious className="hidden md:flex" />
-                    <CarouselNext className="hidden md:flex" />
-                </Carousel>
-            </div>
-        </div>
+            <Carousel
+                opts={{
+                    align: 'start',
+                    loop: true,
+                }}
+            >
+                <CarouselContent className="mx-auto max-w-7xl">
+                    {services.map((service, index) => {
+                        const Icon = service.icon
+                        return (
+                            <CarouselItem
+                                key={index}
+                                className="pl-2 md:basis-1/2 lg:basis-1/3 md:pl-4 "
+                            >
+                                <Card className="overflow-hidden hover:scale-105 transition-all duration-500 ease-in-out ">
+                                    <div className="relative h-48">
+                                        <Image
+                                            src={service.image}
+                                            alt={service.title}
+                                            className="h-full w-full object-cover"
+                                            width={400}
+                                            height={400}
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                                        <Icon className="absolute bottom-4 right-4 h-8 w-8 text-white" />
+                                    </div>
+                                    <CardContent className="h-[150px] p-6 ">
+                                        <h3 className="mb-2 text-xl font-bold">
+                                            {service.title}
+                                        </h3>
+                                        <p className="text-sm md:text-base   text-gray-600 dark:text-gray-300">
+                                            {service.description}
+                                        </p>
+                                    </CardContent>
+                                </Card>
+                            </CarouselItem>
+                        )
+                    })}
+                </CarouselContent>
+                <CarouselPrevious className="hidden md:flex" />
+                <CarouselNext className="hidden md:flex" />
+            </Carousel>
+        </section>
     )
 }
