@@ -57,7 +57,9 @@ export default {
             },
             backgroundImage: {
                 hero: "url('/assets/hero.png')",
+             
             },
+           
             screens: {
                 xs: '400px',
                 '3xl': '1680px',
