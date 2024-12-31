@@ -83,3 +83,43 @@ export const TESTIMONIAL = [
     des: "Me sorprendió la calidad de los servicios ofrecidos. Los paisajes y la atención personalizada hicieron que este viaje fuera inolvidable."
   }
 ];
+
+// src/data/catalogs.js
+
+export const catalogs = [
+  {
+    id: 1,
+    title: "Ampolletas",
+    description: "Nuevos productos y ofertas especiales",
+    thumbnail:"/assets/AmpolletasLed.jpeg",
+    pdfUrl: "/AmpolletasRLC.pdf"
+  },
+  {
+    id: 2,
+    title: "Campanas",
+    description: "Colección exclusiva de temporada",
+    thumbnail: "/assets/CampanaLed.jpeg",
+    pdfUrl: "/CampanasLed.pdf" 
+  },
+  {
+    id: 3,
+    title: "Focos de riel",
+    description: "Descubre las últimas tendencias",
+    thumbnail: "/assets/foco.jpeg",
+    pdfUrl: "/FocoderielRLC.pdf" 
+  },
+  {
+    id: 4,
+    title: "Lineales Led",
+    description: "Productos especiales de temporada",
+    thumbnail: "",
+    pdfUrl: "/LinealesLedRLC.pdf"
+  },
+  {
+    id: 5,
+    title: "Revista de catalogos",
+    description: "Edición limitada de productos selectos",
+    thumbnail: "",
+    pdfUrl: "/RevistaCatálogoRLC.pdf"
+  }
+];
