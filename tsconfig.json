@@ -32,7 +32,8 @@
         "lib/pages/Services.jsx",
         "lib/pages/Packages.jsx",
         "lib/pages/Hero.jsx",
-        "lib/pages/CompanyProfile.jsx"
+        "lib/pages/CompanyProfile.jsx",
+        "lib/components/CalltoAction.jsx"
     ],
     "exclude": ["node_modules"]
 }
