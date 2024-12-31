@@ -5,7 +5,7 @@ export function CallToAction() {
     return (
         <div
             id="contacto"
-            className="bg-blue-50 py-24 dark:bg-gray-800"
+            className="bg-blue-50 mt-24 dark:bg-gray-800"
         >
             <div className="container mx-auto px-4">
                 <Card className="overflow-hidden bg-gradient-to-r from-blue-600 to-blue-800 text-white">

@@ -1,29 +1,15 @@
-import { Card } from './ui/card'
-import Image from 'next/image'
+import Video from '../hooks/Video'
 
 const CompanyProfile = () => {
     return (
         <section
             id="nosotros"
-            className=" py-16 dark:from-gray-900 dark:to-gray-800"
+            className=" container mx-auto px-4 mt-24   dark:from-gray-900 dark:to-gray-800"
         >
             <div className="container mx-auto px-4">
                 <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
-                    {/* Imagen del perfil de la empresa */}
-                    <article className="order-2 lg:order-1">
-                        <Card className="group overflow-hidden shadow-xl transition-all hover:shadow-2xl">
-                            <Image
-                                src="/assets/profile.png"
-                                alt="Imagen de ingeniería industrial"
-                                className="w-lg bg-cover object-bottom transition-transform duration-300 group-hover:scale-105"
-                                width={500}
-                                height={500}
-                            />
-                        </Card>
-                    </article>
-
                     {/* Información de la empresa */}
-                    <article className="space-y-6 p-6 w-full lg:w-1/2 order-1 lg:order-2">
+                    <div className="space-y-6 p-6 w-full lg:w-1/2 ">
                         <header>
                             <h2 className="text-3xl font-bold tracking-tight text-blue-600 dark:text-blue-400">
                                 RLC Engineering especializada en Electricidad
@@ -46,7 +32,10 @@ const CompanyProfile = () => {
                                 diversos sectores industriales.
                             </p>
                         </div>
-                    </article>
+                    </div>
+                    <div className="group rounded-xl w-11/12 lg:w-1/2  lg:h-1/2 h-11/12    overflow-hidden shadow-xl transition-all hover:shadow-2xl">
+                        <Video />
+                    </div>
                 </div>
             </div>
         </section>
