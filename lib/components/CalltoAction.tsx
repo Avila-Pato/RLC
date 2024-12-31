@@ -3,7 +3,7 @@ import { Card } from './ui/card'
 
 export function CallToAction() {
     return (
-        <div
+        <section
             id="contacto"
             className="bg-blue-50 mt-24 dark:bg-gray-800"
         >
@@ -40,6 +40,6 @@ export function CallToAction() {
                     </div>
                 </Card>
             </div>
-        </div>
+        </section>
     )
 }

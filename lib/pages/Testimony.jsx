@@ -53,22 +53,27 @@ const Clients = () => {
                     lazyLoad="progressive"
                     centerMode
                     responsive={sliderSettings.responsive}
-                    className="w-11/12 lg:w-4/5 "
+                    className="w-11/12 lg:w-4/5  "
                 >
                     {TESTIMONIAL.map((testimonial, index) => (
                         <Card
                             key={index}
-                            className="p-6 m-4 h-[450px] lg:h-auto   bg-white shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300 ease-in-out"
+                            className="p-6 m-4 bg-white shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300 ease-in-out"
                         >
-                            <div className="flex flex-col items-center text-center">
+                            <div className="flex flex-col items-center text-center h-[350px] lg:h-80">
                                 <Image
                                     src={testimonial.URL}
                                     alt={testimonial.title}
                                     width={100}
                                     height={100}
-                                    className="rounded-full mb-4"
+                                    className="rounded-full mb-4 "
                                 />
-                                <RiDoubleQuotesR className="text-gray-400 text-4xl mb-3" />
+                                <RiDoubleQuotesR
+                                    className="text-gray-400 relative mb-3"
+                                    width={40}
+                                    height={40}
+                                    color="red"
+                                />
                                 <p className="text-gray-700 text-base mb-3">
                                     {testimonial.des}
                                 </p>

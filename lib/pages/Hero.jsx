@@ -28,20 +28,18 @@ const Hero = () => {
                         enfoque fresco en todo lo que hacemos. Estamos aquí para
                         construir el mañana.
                     </p>
-                    <div className="flex justify-start gap-4 slide-up mt-6">
-                        <Button
-                            id="servicios"
-                            size="lg"
-                            className="px-8"
-                            onClick={() =>
-                                document
-                                    .getElementById('servicios')
-                                    ?.scrollIntoView({ behavior: 'smooth' })
-                            }
-                        >
-                            Leer más..
-                        </Button>
-                    </div>{' '}
+                    <Button
+                        id="servicios"
+                        size="lg"
+                        className="px-8"
+                        onClick={() =>
+                            document
+                                .getElementById('servicios')
+                                ?.scrollIntoView({ behavior: 'smooth' })
+                        }
+                    >
+                        Leer más..
+                    </Button>
                 </div>
             </div>
             <div className="absolute bottom-0 left-0 right-0 ">

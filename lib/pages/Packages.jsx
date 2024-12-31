@@ -13,10 +13,13 @@ import { Button } from '../components/ui/button'
 
 export default function Packages() {
     return (
-        <div className="min-h-screen m-11">
+        <section
+            id="catalogos"
+            className="container mx-auto px-4 mt-24  bg-white dark:bg-gray-900 sm:w-full lg:w-3/4  "
+        >
             <div className="max-w-7xl mx-auto space-y-8">
                 <div className="space-y-4">
-                    <h1 className="text-4xl font-bold text-center">
+                    <h1 className="text-3xl font-bold text-center">
                         Catálogos Digitales
                     </h1>
                     <p className="text-center text-muted-foreground">
@@ -35,50 +38,54 @@ export default function Packages() {
                                     <Image
                                         src={catalog.thumbnail}
                                         alt={catalog.title}
-                                        width={720}
-                                        height={720}
+                                        width={500}
+                                        height={500}
                                         className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
                                     />
                                 </div>
                             </CardHeader>
                             <CardContent className="p-6">
-                                <CardTitle className="mb-2">
+                                <CardTitle className="mb-2 font-bold text-xl">
                                     {catalog.title}
                                 </CardTitle>
-                                <p className="text-sm text-muted-foreground">
+                                <p className="text-base text-muted-foreground">
                                     {catalog.description}
                                 </p>
                             </CardContent>
                             <CardFooter className="p-6 pt-0 flex gap-2">
-                                <Button
-                                    variant="outline"
-                                    className="flex-1"
+                                <a
+                                    href={catalog.pdfUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center w-1/2 justify-center border-2 rounded-md border-primary text-primary"
                                 >
-                                    <a
-                                        href={catalog.pdfUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center"
+                                    <Button
+                                        variant="outline"
+                                        className="flex-1"
                                     >
                                         <Eye className="w-4 h-4 mr-2" />
                                         Ver
-                                    </a>
-                                </Button>
-                                <Button className="flex-1">
-                                    <a
-                                        href={catalog.pdfUrl}
-                                        download
-                                        className="flex items-center"
+                                    </Button>
+                                </a>
+                                <a
+                                    href={catalog.pdfUrl}
+                                    download
+                                    className="flex items-center w-1/2 justify-center border-2 rounded-md border-primary text-primary"
+                                >
+                                    <Button
+                                        variant="outline"
+                                        className="flex-1"
+                                        color="primary"
                                     >
-                                        <Download className="w-4 h-4 mr-2" />
                                         Descargar
-                                    </a>
-                                </Button>
+                                        <Download className="w-full " />
+                                    </Button>
+                                </a>
                             </CardFooter>
                         </Card>
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

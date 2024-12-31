@@ -9,8 +9,8 @@ const Navbar = () => {
     const menuItems = [
         { label: 'Inicio', href: '#' },
         { label: 'Servicios', href: '#servicios' },
+        { label: 'Catálogos', href: '#catalogos' },
         { label: 'Nosotros', href: '#nosotros' },
-        { label: 'Clientes', href: '#clientes' },
         { label: 'Contacto', href: '#contacto' },
     ]
 

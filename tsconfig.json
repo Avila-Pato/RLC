@@ -27,7 +27,12 @@
         "**/*.ts",
         "**/*.tsx",
         ".next/types/**/*.ts",
-        "lib/components/pages/Footer.jsx"
+        "lib/components/pages/Footer.jsx",
+        "lib/pages/Testimony.jsx",
+        "lib/pages/Services.jsx",
+        "lib/pages/Packages.jsx",
+        "lib/pages/Hero.jsx",
+        "lib/pages/CompanyProfile.jsx"
     ],
     "exclude": ["node_modules"]
 }

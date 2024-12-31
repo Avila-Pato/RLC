@@ -12,7 +12,7 @@ const ElectricHeading = () => {
                 lg:w-[800px] 
                 py-6
                 text-lg 
-                sm:text-2xl 
+                md:text-2xl 
                 lg:text-3xl
                 font-bold 
                 text-white
@@ -28,7 +28,7 @@ const ElectricHeading = () => {
                 to-[#B38B4C]
             "
         >
-            <span className="">Nuestros Servicios</span>
+            Nuestros Servicios
         </h2>
     )
 }
