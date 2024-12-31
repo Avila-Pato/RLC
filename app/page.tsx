@@ -1,11 +1,11 @@
 import { CallToAction } from '@/lib/components/CalltoAction'
 import CompanyProfile from '../lib/components/CompanyProfile'
-import Footer from '../lib/components/pages/Footer'
-import Hero from '../lib/components/pages/Hero'
 import Navbar from '../lib/components/NavBar'
-import { Services } from '@/lib/components/pages/Services'
-import Testimony from '@/lib/components/pages/Testimony'
-import Packages from '@/lib/components/pages/Packages'
+import Hero from '@/lib/pages/Hero'
+import { Services } from '@/lib/pages/Services'
+import Packages from '@/lib/pages/Packages'
+import Testimony from '@/lib/pages/Testimony'
+import Footer from '@/lib/pages/Footer'
 
 export default function Home() {
     return (

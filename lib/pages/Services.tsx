@@ -1,13 +1,14 @@
 // src/pages/index.tsx
-import { services } from '../../constant'
-import { Card, CardContent } from '../ui/card'
+import { services } from '../constant'
+import { Card, CardContent } from '../components/ui/card'
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-} from '../ui/carousel'
+} from '../components/ui/carousel'
+
 import Image from 'next/image'
 
 export function Services() {

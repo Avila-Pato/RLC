@@ -4,7 +4,7 @@ import React from 'react'
 import Slider from 'react-slick'
 import { RiDoubleQuotesR } from 'react-icons/ri'
 import Image from 'next/image'
-import { Card } from '../ui/card'
+import { Card } from '../components/ui/card'
 
 // Configuración de Slider
 const sliderSettings = {

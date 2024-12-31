@@ -1,7 +1,7 @@
 'use client'
 import { Zap } from 'lucide-react'
-import { Button } from '../ui/button'
-import ElectricHeading from '../ElectricHeading'
+import { Button } from '../components/ui/button'
+import ElectricHeading from '../components/ElectricHeading'
 
 const Hero = () => {
     return (
