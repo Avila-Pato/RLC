@@ -7,9 +7,9 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="relative bg-hero bg-cover bg-center bg-no-repeat pt-24 pb-16 px-4 sm:pt-32 sm:pb-24"
+            className="relative bg-hero bg-cover bg-center bg-no-repeat  px-4 "
         >
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto mt-16 ">
                 <div className="text-left space-y-8">
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight fade-in">
                         Excelencia en Ingeniería{' '}
@@ -22,13 +22,14 @@ const Hero = () => {
                         transforman ideas en realidad, entregando resultados
                         excepcionales para nuestros clientes.
                     </p>
-                    <p className="max-w-2xl text-base md:text-lg lg:text-xl text-white mt-4">
+                    <p className="max-w-2xl text-base md:text-lg lg:text-xl text-white mt-4 ">
                         Innovadora, joven y comprometida. Somos un equipo que
                         apuesta por el futuro con soluciones de vanguardia y un
                         enfoque fresco en todo lo que hacemos. Estamos aquí para
                         construir el mañana.
                     </p>
-                    <Button
+                    <div className="mb-8"></div>
+                    {/* <Button
                         id="servicios"
                         size="lg"
                         className="px-8"
@@ -39,10 +40,10 @@ const Hero = () => {
                         }
                     >
                         Leer más..
-                    </Button>
+                    </Button> */}
                 </div>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 ">
+            <div className="absolute bottom-0 left-0 right-0  ">
                 <ElectricHeading />
             </div>
         </section>

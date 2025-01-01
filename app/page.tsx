@@ -6,16 +6,18 @@ import { Services } from '@/lib/pages/Services'
 import Packages from '@/lib/pages/Packages'
 import Testimony from '@/lib/pages/Testimony'
 import Footer from '@/lib/pages/Footer'
+import Profile from '@/lib/pages/Profile'
 
 export default function Home() {
     return (
-        <div className="min-h-screen bg-white">
+        <div>
             <Navbar />
             <Hero />
             <Services />
             <Packages />
             <CompanyProfile />
             <Testimony />
+            <Profile />
             <CallToAction />
             <Footer />
         </div>

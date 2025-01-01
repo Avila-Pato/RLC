@@ -15,7 +15,7 @@ export default function Packages() {
     return (
         <section
             id="catalogos"
-            className="container mx-auto px-4 mt-24  bg-white dark:bg-gray-900 sm:w-full lg:w-3/4  "
+            className="container mx-auto px-4 bg-white dark:bg-gray-900 sm:w-full lg:w-3/4  "
         >
             <div className="max-w-7xl mx-auto space-y-8">
                 <div className="space-y-4">
@@ -33,13 +33,13 @@ export default function Packages() {
                             key={catalog.id}
                             className="group hover:shadow-lg transition-shadow duration-300"
                         >
-                            <CardHeader className="relative p-0">
-                                <div className="aspect-[4/3] relative overflow-hidden rounded-t-lg">
+                            <CardHeader className="relative p-0 h-1/2 ">
+                                <div className="aspect-[6/3] relative overflow-hidden rounded-t-lg">
                                     <Image
                                         src={catalog.thumbnail}
                                         alt={catalog.title}
-                                        width={500}
-                                        height={500}
+                                        width={350}
+                                        height={350}
                                         className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
                                     />
                                 </div>

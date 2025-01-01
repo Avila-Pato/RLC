@@ -40,7 +40,7 @@ const Video = () => {
                 {/* Video */}
                 <video
                     ref={videoRef} // Asocia la referencia al video
-                    className="w-full h-[260px] md:h-[400px] rounded-4xl"
+                    className="w-full h-[260px] md:h-[400px] rounded-xl"
                     controls
                     autoPlay={false} // No auto-reproduce
                     muted

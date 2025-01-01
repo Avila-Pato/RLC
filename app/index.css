@@ -52,15 +52,6 @@
     font-family: var(--font-poppins);
 }
 
-@layer base {
-    * {
-        @apply border-border;
-    }
-    body {
-        @apply bg-background text-foreground;
-    }
-}
-
 .fade-in {
     animation: fadeIn 0.5s ease-in;
 }
@@ -196,11 +187,38 @@ html {
     }
 }
 
+/* // Slider */
 .slick-slide {
     padding: 0 10px;
 }
 
-/* the parent */
-/* .slick-list {
-    margin: 0 -27px;
-} */
+/* Estilo base para secciones */
+section {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    section {
+        padding: 3rem 1.5rem;
+        margin-bottom: 3rem;
+    }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 1.5rem 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
