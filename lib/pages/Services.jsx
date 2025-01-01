@@ -15,7 +15,7 @@ export function Services() {
     return (
         <section
             id="servicios"
-            className="container mx-auto px-4 bg-white dark:bg-gray-900 sm:w-full lg:w-3/4  "
+            className="container mx-auto w-full md:w-9/12"
         >
             <p className="tracking-tight text-base md:text-lg lg:text-xl mt-4 mb-16 text-center">
                 Ofrecemos una amplia gama de servicios especializados en

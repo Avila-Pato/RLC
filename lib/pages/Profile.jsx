@@ -5,9 +5,9 @@ import { User, Shield, CheckCircle } from 'lucide-react'
 
 const Profile = () => {
     return (
-        <section className="container mx-auto px-4 sm:px-6 lg:px-8 relative ">
+        <section className="container mx-auto  w-full md:w-9/12 ">
             {/* fondo decoracion*/}
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative ">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ">
                     {/* columna izquierda - contenido */}
                     <div className="space-y-8 text-center lg:text-left">
@@ -66,8 +66,8 @@ const Profile = () => {
                     </div>
 
                     {/* Right Column - Sobre Mí */}
-                    <div className="lg:h-full flex items-center">
-                        <Card className="w-full  bg-card/50 backdrop-blur-sm  border-primary/10 transform">
+                    <div className="flex items-center shadow-xl">
+                        <Card className="w-full  bg-card/50 backdrop-blur-sm  border-primary/10 transform ">
                             <div className="flex flex-col gap-6">
                                 <div className="flex items-center gap-3 p-5">
                                     <div className="p-2 rounded-full bg-primary/10 shrink-0">
@@ -78,11 +78,11 @@ const Profile = () => {
                                     </h2>
                                 </div>
 
-                                <div className="flex justify-center rounded-2xl overflow-hidden">
+                                <div className=" flex justify-center overflow-hidden">
                                     <Image
                                         src="/assets/RLC.jpeg"
                                         alt="Profile"
-                                        className="object-cover"
+                                        className="object-cover rounded-lg "
                                         width={300}
                                         height={300}
                                     />

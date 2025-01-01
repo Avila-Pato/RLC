@@ -15,9 +15,18 @@ export default function Home() {
         <Suspense
             name="Home"
             fallback={
-                <div className=" flex items-center justify-center ">
-                    <FaSpinner className="animate-spin text-4xl text-gray-500 " />
-                    <span className="ml-2 text-xl ">Cargando...</span>
+                <div
+                    className="flex items-center justify-center"
+                    style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                    }}
+                >
+                    <FaSpinner className="animate-spin text-4xl text-gray-500" />
+                    <span className="ml-2 text-xl">Cargando...</span>
                 </div>
             }
         >
@@ -26,8 +35,8 @@ export default function Home() {
             <Services />
             <Packages />
             <CompanyProfile />
-            <Testimony />
             <Profile />
+            <Testimony />
             <CallToAction />
             <Footer />
         </Suspense>

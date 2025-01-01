@@ -40,7 +40,7 @@ const sliderSettings = {
 const Clients = () => {
     return (
         <section
-            className="container mx-auto py-16"
+            className="container mx-auto  w-full md:w-9/12"
             id="clientes"
         >
             <div className="max-w-4xl mx-auto text-center mb-12">
@@ -59,14 +59,14 @@ const Clients = () => {
             <div className="px-4">
                 <Slider
                     {...sliderSettings}
-                    className="testimonials-slider"
+                    className="testimonials-slider pb-5 m-5 "
                 >
                     {TESTIMONIAL.map((testimonial, index) => (
                         <div
                             key={index}
                             className="px-4"
                         >
-                            <Card className="p-2 transform hover:scale-105  transition-transform duration-300">
+                            <Card className="p-2 transform hover:scale-105  transition-transform duration-300 shadow-sm ">
                                 <CardHeader className="space-y-4">
                                     <div className="relative w-20 h-20 mx-auto rounded-full overflow-hidden b">
                                         <Image

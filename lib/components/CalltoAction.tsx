@@ -10,20 +10,14 @@ export function CallToAction() {
     const imageUrl = '/assets/Daugther.jpeg'
 
     return (
-        <div
+        <section
             id="contacto"
-            className="relative overflow-hidden"
+            className="container mx-auto  w-full md:w-9/12"
         >
-            {/* Fondo principal */}
-            <div className="absolute inset-0 bg-gradient-to-br dark:from-gray-900 dark:to-gray-800"></div>
-
             <div className="container mx-auto px-4 relative">
                 <Card className="relative overflow-hidden backdrop-blur-xl border-0 shadow-2xl">
                     {/* Fondo cuadriculado dentro de la tarjeta */}
                     <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808022_1px,transparent_1px),linear-gradient(to_bottom,#80808022_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none"></div>
-
-                    <div className="absolute inset-0 bg-gradient-to-r dark:from-blue-900/20 z-10" />
-
                     <div className="flex flex-col lg:flex-row items-center gap-12 p-8 lg:p-16 relative z-20">
                         {/* Sección de texto */}
                         <div className="lg:text-left relative">
@@ -86,6 +80,6 @@ export function CallToAction() {
                     </div>
                 </Card>
             </div>
-        </div>
+        </section>
     )
 }
