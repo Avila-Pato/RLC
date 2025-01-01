@@ -35,7 +35,7 @@ const Profile = () => {
                             </p>
 
                             <div className="flex  gap-2 md:gap-4  ">
-                                <div className="bg-blue-400 shadow-xl flex items-center justify-center rounded-full bg-primary/10 p-2 text-primary  w-1/2">
+                                <div className="shadow-xl flex items-center justify-center rounded-full bg-primary/10 p-2 text-primary  w-1/2">
                                     <Shield
                                         className="mr-2 h-5 w-5 "
                                         color="green"

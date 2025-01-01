@@ -13,8 +13,9 @@ import Profile from '@/lib/pages/Profile'
 export default function Home() {
     return (
         <Suspense
+            name="Home"
             fallback={
-                <div className=" flex justify-center items-center h-screen ">
+                <div className=" flex items-center justify-center ">
                     <FaSpinner className="animate-spin text-4xl text-gray-500 " />
                     <span className="ml-2 text-xl ">Cargando...</span>
                 </div>
