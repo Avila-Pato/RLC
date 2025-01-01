@@ -3,7 +3,7 @@
 import React, { useState, useRef } from 'react'
 import { RiPlayFill } from 'react-icons/ri'
 
-const Video = () => {
+const Video2 = () => {
     const [isPlaying, setIsPlaying] = useState(false) // Estado para manejar la visibilidad del ícono
     const videoRef = useRef<HTMLVideoElement | null>(null)
 
@@ -50,7 +50,7 @@ const Video = () => {
                     height={500}
                 >
                     <source
-                        src="/assets/video.mp4"
+                        src="/assets/video2.mp4"
                         type="video/mp4"
                         width={500}
                         height={500}
@@ -61,4 +61,4 @@ const Video = () => {
     )
 }
 
-export default Video
+export default Video2

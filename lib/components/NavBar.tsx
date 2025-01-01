@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Building2, Menu, X } from 'lucide-react'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -16,13 +16,14 @@ const Navbar = () => {
 
     return (
         <nav className="fixed w-full z-50 bg-primary/90 backdrop-blur-md py-4 transition-all duration-300">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto  px-4">
                 <div className="flex justify-between items-center">
                     {/* Logo */}
                     <a
                         href="#"
-                        className="text-white text-2xl font-bold"
+                        className="text-white text-2xl scale-75 font-bold inline-flex items-center gap-2 "
                     >
+                        <Building2 className="h-6 w-6" />
                         RLC Engineering
                     </a>
 
