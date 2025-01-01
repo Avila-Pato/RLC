@@ -4,7 +4,7 @@ import React from 'react'
 import Slider from 'react-slick'
 import { RiDoubleQuotesR } from 'react-icons/ri'
 import Image from 'next/image'
-import { Card } from '../components/ui/card'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader } from '../components/ui/card'
 
 // Configuración de Slider
 const sliderSettings = {
@@ -33,62 +33,60 @@ const sliderSettings = {
 
 const Clients = () => {
     return (
-        <section
-            className="container mx-auto "
-            id="clientes"
-        >
-            <h3 className="font-bold text-3xl text-center py-6 mt-5">
-                Nuestra lista de clientes
-            </h3>
-            <p className="text-base md:text-lg lg:text-xl text-left lg:text-center sm:text-center tracking-tight text-gray-800 mb-5 scale-95">
-                Desde nuestros inicios, hemos brindado un servicio confiable a
-                nuestra clientela. A lo largo de los años, hemos trabajado con
-                dedicación para entender y satisfacer las necesidades de cada
-                uno de nuestros clientes, asegurándonos de ofrecer soluciones de
-                calidad que generen confianza.
-            </p>
-            <div className="flex justify-center">
-                <Slider
-                    {...sliderSettings}
-                    lazyLoad="progressive"
-                    centerMode
-                    responsive={sliderSettings.responsive}
-                    className="w-11/12 lg:w-4/5  "
-                >
-                    {TESTIMONIAL.map((testimonial, index) => (
-                        <div
-                            key={index}
-                            className="p-2 m-4 bg-white shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300 ease-in-out"
-                        >
-                            <div className="flex flex-col items-center text-center h-auto  lg:h-80">
-                                <Image
-                                    src={testimonial.URL}
-                                    alt={testimonial.title}
-                                    width={100}
-                                    height={100}
-                                    className="rounded-full mb-4 "
-                                />
-                                <RiDoubleQuotesR
-                                    className="text-gray-400 relative mb-3"
-                                    width={40}
-                                    height={40}
-                                    color="red"
-                                />
-                                <p className="text-gray-700 text-base mb-3">
-                                    {testimonial.des}
-                                </p>
-                                <h4 className="font-semibold text-lg text-gray-900">
-                                    {testimonial.title}
-                                </h4>
-                                <span className="text-sm text-gray-500">
-                                    {testimonial.profesion}
-                                </span>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
-        </section>
+        <section className="container mx-auto py-16" id="clientes">
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <h3 className="text-4xl font-bold mb-6">
+            Nuestra lista de clientes
+          </h3>
+          <p className="text-lg text-gray-600">
+            Desde nuestros inicios, hemos brindado un servicio confiable a
+            nuestra clientela. A lo largo de los años, hemos trabajado con
+            dedicación para entender y satisfacer las necesidades de cada
+            uno de nuestros clientes, asegurándonos de ofrecer soluciones de
+            calidad que generen confianza.
+          </p>
+        </div>
+  
+        <div className="px-4">
+          <Slider {...sliderSettings} className="testimonials-slider">
+            {TESTIMONIAL.map((testimonial, index) => (
+              <div key={index} className="px-4">
+                <Card className="h-full transform hover:scale-105  transition-transform duration-300">
+                  <CardHeader className="space-y-4">
+                    <div className="relative w-20 h-20 mx-auto rounded-full overflow-hidden b">
+                      <Image
+                        src={testimonial.URL}
+                        alt={testimonial.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="text-center">
+                      <h4 className="font-semibold text-slate-950">{testimonial.name}</h4>
+                      <p className="text-sm text-gray-500">{testimonial.profesion}</p>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="relative">
+                      <RiDoubleQuotesR className="text-2xl text-red-600 mx-auto" />
+                      <CardDescription className="text-center pt-4 text-sm poppins">
+                        {testimonial.des}
+                      </CardDescription>
+                    </div>
+                  </CardContent>
+                  <CardFooter className="justify-center">
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <span key={i} className="text-yellow-400 text-xl">★</span>
+                      ))}
+                    </div>
+                  </CardFooter>
+                </Card>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </section>
     )
 }
 
