@@ -6,10 +6,13 @@ import { Services } from '@/lib/pages/Services'
 import Packages from '@/lib/pages/Packages'
 import Testimony from '@/lib/pages/Testimony'
 import Footer from '@/lib/pages/Footer'
+import { Suspense } from 'react'
 
 export default function Home() {
+
     return (
         <div className="min-h-screen bg-white">
+            <Suspense fallback={<div>Loading...</div>} >
             <Navbar />
             <Hero />
             <Services />
@@ -18,6 +21,7 @@ export default function Home() {
             <Testimony />
             <CallToAction />
             <Footer />
+            </Suspense> 
         </div>
     )
 }
