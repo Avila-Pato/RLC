@@ -16,7 +16,7 @@ import Image from 'next/image'
 
 const Footer = () => {
     return (
-        <footer className="bg-primary mt-24 text-white ">
+        <footer className="bg-primary text-white p-5 ">
             <div className="container mx-auto px-4 ">
                 <Accordion
                     type="single"

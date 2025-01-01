@@ -50,7 +50,7 @@ export const TESTIMONIAL = [
         title: 'Diego Fernández',
         profesion: 'Empresario',
         URL: '/assets/person-1.jpg',
-        des: 'Fantásticos destinos, guías con conocimientos, logística impecable, espectaculares vistas y recuerdos. Excedió mis expectativas; valió cada centavo.',
+        des: 'Fantásticos destinos, guías con conocimientos, logística impecable, espectaculares vistas y recuerdos. Excedió mis expectativas.',
     },
     {
         title: 'Camila Rojas',
