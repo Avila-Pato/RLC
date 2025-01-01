@@ -62,7 +62,7 @@ const Clients = () => {
                       />
                     </div>
                     <div className="text-center">
-                      <h4 className="font-semibold text-slate-950">{testimonial.name}</h4>
+                      <h4 className="font-semibold text-slate-">{testimonial.name}</h4>
                       <p className="text-sm text-gray-500">{testimonial.profesion}</p>
                     </div>
                   </CardHeader>
