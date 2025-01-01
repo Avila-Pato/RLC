@@ -36,7 +36,7 @@ const sliderSettings = {
 
 const Clients = () => {
   return (
-    <section className="container mx-auto py-16" id="clientes">
+    <section className="container mx-auto py-3" id="clientes">
       <h3 className="font-bold text-3xl text-center py-6 mt-5">
         Nuestra lista de clientes
       </h3>
@@ -90,12 +90,12 @@ const Clients = () => {
 
       {/* segunda seccion */}
       <section className="min-h-screen  to-muted relative overflow-hidden">
-        {/* Background decoration */}
+        {/* fondo decoracion*/}
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
         <div className="absolute h-full w-full " />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
-            {/* Left Column - Main Content */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen p-9 ">
+            {/* columna izquierda - contenido */}
             <div className="space-y-8 text-center lg:text-left">
               <div className="space-y-4">
                 <div className="inline-block">
@@ -150,7 +150,8 @@ const Clients = () => {
 
             {/* Right Column - Sobre Mí */}
             <div className="lg:h-full flex items-center">
-              <Card className="w-full p-8 bg-card/50 backdrop-blur-sm border-primary/10 transform hover:scale-[1.02] transition-all">
+              <Card className="w-full  bg-card/50 backdrop-blur-sm 
+               border-primary/10 transform hover:scale-[1.02] transition-all">
                 <div className="flex flex-col gap-6">
                   <div className="flex items-center gap-3">
                     <div className="p-2 rounded-full bg-primary/10 shrink-0">

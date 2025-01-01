@@ -12,7 +12,7 @@ export function CallToAction() {
     return (
         <div
             id="contacto"
-            className="relative py-24 overflow-hidden"
+            className="relative overflow-hidden"
         >
             {/* Fondo principal */}
             <div className="absolute inset-0 bg-gradient-to-br dark:from-gray-900 dark:to-gray-800"></div>
