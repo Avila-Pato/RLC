@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { Button } from './ui/button'
 import { Card } from './ui/card'
 import { motion } from 'framer-motion'
@@ -63,13 +62,12 @@ export function CallToAction() {
                             >
                                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                                     <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent z-10" />
-                                    <Image
+                                    <img
                                         src={imageUrl}
                                         alt="Ilustración de colaboración"
                                         width={900}
                                         height={900}
                                         className=" max-w-sm mx-auto  lg:mx-0 object-cover transform hover:scale-105 transition-transform duration-500"
-                                        priority
                                     />
                                 </div>
 

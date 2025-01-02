@@ -16,7 +16,7 @@ export default function Home() {
             name="Home"
             fallback={
                 <div
-                    className="flex items-center justify-center"
+                    className="flex gap-2 items-center justify-center"
                     style={{
                         position: 'absolute',
                         top: 0,

@@ -1,5 +1,5 @@
 import Video2 from '../hooks/Video2'
-import Image from 'next/image'
+
 import { Card } from '../components/ui/card'
 import { User, Shield, CheckCircle } from 'lucide-react'
 
@@ -79,7 +79,7 @@ const Profile = () => {
                                 </div>
 
                                 <div className=" flex justify-center overflow-hidden">
-                                    <Image
+                                    <img
                                         src="/assets/RLC.jpeg"
                                         alt="Profile"
                                         className="object-cover rounded-lg "

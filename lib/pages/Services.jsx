@@ -9,8 +9,6 @@ import {
     CarouselPrevious,
 } from '../components/ui/carousel'
 
-import Image from 'next/image'
-
 export function Services() {
     return (
         <section
@@ -42,13 +40,14 @@ export function Services() {
                             >
                                 <Card className="overflow-hidden hover:scale-105 transition-all duration-500 ease-in-out ">
                                     <div className="relative h-48">
-                                        <Image
+                                        <img
                                             src={service.image}
                                             alt={service.title}
                                             className="h-full w-full object-cover"
                                             width={400}
                                             height={400}
                                         />
+
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                                         <Icon className="absolute bottom-4 right-4 h-8 w-8 text-white" />
                                     </div>

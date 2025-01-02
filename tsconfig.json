@@ -33,7 +33,9 @@
         "lib/pages/Packages.jsx",
         "lib/pages/Hero.jsx",
         "lib/pages/CompanyProfile.jsx",
-        "lib/components/CalltoAction.jsx"
+        "lib/components/CalltoAction.jsx",
+        "lib/components/NavBar.jsx",
+        "lib/components/ElectricHeading.jsx"
     ],
     "exclude": ["node_modules"]
 }
