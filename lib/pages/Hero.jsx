@@ -16,12 +16,12 @@ const Hero = () => {
                         para tu Éxito
                     </h1>
                     <Zap className="h-12 w-12 text-blue-600 dark:text-blue-400" />
-                    <p className="max-w-2xl text-base md:text-lg lg:text-xl text-white ">
+                    <p className="max-w-2xl text-base md:text-lg text-white ">
                         Ofrecemos soluciones innovadoras de ingeniería que
                         transforman ideas en realidad, entregando resultados
                         excepcionales para nuestros clientes.
                     </p>
-                    <p className="max-w-2xl text-base md:text-lg lg:text-xl text-white mt-4 ">
+                    <p className="max-w-2xl text-base md:text-lg text-white mt-4 ">
                         Innovadora, joven y comprometida. Somos un equipo que
                         apuesta por el futuro con soluciones de vanguardia y un
                         enfoque fresco en todo lo que hacemos. Estamos aquí para

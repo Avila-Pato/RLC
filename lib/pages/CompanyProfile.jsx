@@ -17,14 +17,14 @@ const CompanyProfile = () => {
                     </header>
 
                     <div className="space-y-4 text-lg leading-relaxed text-gray-800 dark:text-gray-300 ">
-                        <p className="text-base md:text-lg lg:text-xl border-l-4 border-blue-600 pl-4">
+                        <p className="text-base md:text-lg  border-l-4 border-blue-600 pl-4">
                             Fundada en ​el año 2023 por estudiantes de Duoc UC
                             Pontificia ​Universidad Católica. Esta compañía se
                             destaca por ​su equipo joven y comprometido, siempre
                             buscando ​la excelencia y el cumplimiento de las
                             normas ​vigentes.
                         </p>
-                        <p className="text-base md:text-lg lg:text-xl">
+                        <p className="text-base md:text-lg ">
                             Nuestro compromiso con la excelencia y la innovación
                             nos ha permitido establecer relaciones duraderas con
                             empresas líderes en diversos sectores industriales.
