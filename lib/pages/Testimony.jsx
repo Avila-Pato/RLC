@@ -5,7 +5,6 @@ import Slider from 'react-slick'
 import { RiDoubleQuotesR } from 'react-icons/ri'
 
 import {
-<<<<<<< HEAD
   Card,
   CardContent,
   CardDescription,
@@ -13,15 +12,6 @@ import {
   CardHeader,
 } from "../components/ui/card";
 
-=======
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-} from '../components/ui/card'
-import { AiTwotoneLike } from 'react-icons/ai'
->>>>>>> ce5ec49b5d93ede62d255feeef4cac5d9c4d07b5
 
 // Configuración de Slider
 const sliderSettings = {
