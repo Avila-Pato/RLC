@@ -47,36 +47,32 @@ export const services = [
 
 export const TESTIMONIAL = [
     {
-        title: 'Diego Fernández',
-        profesion: 'Empresario',
-        URL: '/assets/person-1.jpg',
-        des: 'Fantásticos destinos, guías con conocimientos, logística impecable, espectaculares vistas y recuerdos. Excedió mis expectativas.',
+      name: 'Diego Fernández',
+      profesion: '@codecraftqueen',
+      des: 'La innovación en ingeniería eléctrica y automatización industrial de esta compañía es sobresaliente. Lograron optimizar nuestros procesos y mejorar nuestra productividad de manera impresionante.',
     },
     {
-        title: 'Camila Rojas',
-        profesion: 'Creativa',
-        URL: '/assets/person-2.jpg',
-        des: 'Una experiencia inolvidable. La organización fue impecable y los lugares visitados, impresionantes. Totalmente recomendable.',
+      name: 'Camila Rojas',
+      profesion: '@designcodepro',
+      des: 'Un equipo joven y comprometido que realmente entiende las necesidades de sus clientes. Su enfoque personalizado marcó una gran diferencia en nuestra colaboración.',
     },
     {
-        title: 'Ignacio Pérez',
-        profesion: 'Especialista en Tecnología',
-        URL: '/assets/person-3.jpg',
-        des: 'Todo fue perfecto, desde la planificación hasta la ejecución. Los guías fueron muy amables y profesionales. ¡Volveré!',
+      name: 'Ignacio Pérez',
+      profesion: '@pixelengineer',
+      des: 'La calidad y profesionalismo de esta compañía exceden las expectativas. Las soluciones implementadas se adaptaron perfectamente a nuestras necesidades específicas.',
     },
     {
-        title: 'Valentina Soto',
-        profesion: 'Amante de la Gastronomía',
-        URL: '/assets/person-4.jpg',
-        des: 'Cada detalle estuvo cuidado al máximo. Disfruté mucho de los paisajes y las actividades organizadas. Una experiencia única.',
+      name: 'Valentina Soto',
+      profesion: '@reactwhisperer',
+      des: 'Ofrecen un soporte técnico impecable y soluciones innovadoras. Trabajar con ellos ha sido una experiencia enriquecedora y productiva.',
     },
     {
-        title: 'Francisco Morales',
-        profesion: 'Artista',
-        URL: '/assets/person-5.jpg',
-        des: 'Me sorprendió la calidad de los servicios ofrecidos. Los paisajes y la atención personalizada hicieron que este viaje fuera inolvidable.',
+      name: 'Francisco Morales',
+      profesion: '@uxalchemy',
+      des: 'Destacan por su compromiso con la excelencia y la innovación. Gracias a su experiencia, logramos resultados increíbles en nuestros proyectos industriales.',
     },
-]
+  ];
+  
 
 export const catalogs = [
     {
@@ -115,3 +111,9 @@ export const catalogs = [
         pdfUrl: '/RevistaCatálogoRLC.pdf',
     },
 ]
+
+
+
+
+
+
