@@ -53,19 +53,25 @@ export default function Packages() {
         >
           {catalogs.map((catalog) => (
             <motion.div key={catalog.id} variants={item}>
-              <Card className="group h-full flex flex-col overflow-hidden border-2 rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform">
+              <Card className="group h-full flex flex-col overflow-hidden border-2 rounded-xl
+               bg-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 transform">
                 <CardHeader className="p-0 rounded-t-xl overflow-hidden">
                   <div className="relative aspect-[16/9] overflow-hidden">
                     <Image
                       src={catalog.thumbnail}
                       alt={catalog.title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="object-cover transition-transform duration-200 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </div>
-                </CardHeader>
+                    {/* seccion de la opacidad al pasar el cursor en la imagen  */}
+                    <div className="absolute inset-0 bg-transparent
+                     backdrop-blur-sm backdrop-saturate-200 border
+                      border-white/45 opacity-0 group-hover:bg-opacity-0
+                      transition-opacity duration-200" />
 
+                  </div>
+                  
+                </CardHeader>
                 <CardContent className="flex-grow p-6">
                   <CardTitle className="text-2xl mb-3 group-hover:text-primary transition-colors">
                     {catalog.title}
@@ -78,7 +84,8 @@ export default function Packages() {
                 <CardFooter className="p-6 pt-0 gap-4 flex flex-wrap">
                   <Button
                     variant="outline"
-                    className="flex-1 mb-2 md:mb-0 hover:bg-primary hover:text-primary-foreground transition-colors rounded-lg border-2 border-primary"
+                    className="flex-1 mb-2 md:mb-0 hover:bg-primary hover:text-primary-foreground
+                     transition-colors rounded-lg border-2 border-primary"
                     asChild
                   >
                     <a
