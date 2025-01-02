@@ -11,7 +11,7 @@ import {
   CardFooter,
   CardHeader,
 } from "../components/ui/card";
-import { AiTwotoneLike } from "react-icons/ai";
+
 
 // Configuración de Slider
 const sliderSettings = {
