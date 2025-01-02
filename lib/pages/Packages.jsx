@@ -30,7 +30,7 @@ const item = {
 
 export default function Packages() {
   return (
-    <section className="mx-auto w-full md:w-9/12">
+    <section id="catalogos" className="mx-auto w-full md:w-9/12">
       <div className="container mx-auto max-w-7xl">
         <div className="space-y-6 text-center mb-12">
           <div className="inline-block">
@@ -53,8 +53,8 @@ export default function Packages() {
         >
           {catalogs.map((catalog) => (
             <motion.div key={catalog.id} variants={item}>
-              <Card className="group h-full flex flex-col overflow-hidden border-2 hover:border-primary/20 transition-all duration-300 hover:shadow-xl">
-                <CardHeader className="p-0">
+              <Card className="group h-full flex flex-col overflow-hidden border-2 rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform">
+                <CardHeader className="p-0 rounded-t-xl overflow-hidden">
                   <div className="relative aspect-[16/9] overflow-hidden">
                     <Image
                       src={catalog.thumbnail}
@@ -70,7 +70,7 @@ export default function Packages() {
                   <CardTitle className="text-2xl mb-3 group-hover:text-primary transition-colors">
                     {catalog.title}
                   </CardTitle>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground text-gray-900 leading-relaxed">
                     {catalog.description}
                   </p>
                 </CardContent>
@@ -78,7 +78,7 @@ export default function Packages() {
                 <CardFooter className="p-6 pt-0 gap-4 flex flex-wrap">
                   <Button
                     variant="outline"
-                    className="flex-1 mb-2 md:mb-0 md:flex-1 hover:bg-primary hover:text-primary-foreground transition-colors"
+                    className="flex-1 mb-2 md:mb-0 hover:bg-primary hover:text-primary-foreground transition-colors rounded-lg border-2 border-primary"
                     asChild
                   >
                     <a
@@ -93,7 +93,7 @@ export default function Packages() {
 
                   <Button
                     variant="default"
-                    className="flex-1 mb-2 md:mb-0 md:flex-1 bg-primary hover:bg-primary/90"
+                    className="flex-1 mb-2 md:mb-0 bg-primary hover:bg-primary/90 rounded-lg"
                     asChild
                   >
                     <a href={catalog.pdfUrl} download>

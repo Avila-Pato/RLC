@@ -16,7 +16,7 @@ import {
 // Configuración de Slider
 const sliderSettings = {
     arrows: false,
-    autoplay: false,
+    autoplay: true,
     infinite: true,
     dots: true,
     speed: 1000,
