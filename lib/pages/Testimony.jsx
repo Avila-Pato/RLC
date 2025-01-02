@@ -79,7 +79,7 @@ const Clients = () => {
                     </p>
                   </div>
                 </CardFooter>
-                <div class="bg-sky-500 p-0.5 rounded-b-lg "></div>
+                <div className="bg-sky-500 p-0.5 rounded-b-lg "></div>
               </Card>
             </div>
           ))}
