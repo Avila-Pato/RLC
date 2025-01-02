@@ -1,6 +1,5 @@
 'use client'
 import { Zap } from 'lucide-react'
-import { Button } from '../components/ui/button'
 import ElectricHeading from '../components/ElectricHeading'
 
 const Hero = () => {
@@ -9,8 +8,8 @@ const Hero = () => {
             id="home"
             className="relative bg-hero bg-cover bg-center bg-no-repeat  px-4 "
         >
-            <div className="max-w-7xl mx-auto mt-16 ">
-                <div className="text-left space-y-8 ">
+            <div className="container mx-auto py-16 md:py-24 lg:py-32">
+                <div className="text-left space-y-8">
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight fade-in">
                         Excelencia en Ingeniería{' '}
                         <br className="hidden sm:block" />

@@ -1,6 +1,8 @@
 const ElectricHeading = () => {
     return (
+        
         <h2
+            id="servicios"
             className="
                 absolute 
                 bottom-[-50px] 

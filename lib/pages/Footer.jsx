@@ -113,14 +113,14 @@ const Footer = () => {
                         <Image
                             src="/assets/Logo.png"
                             alt="LogoEmpresa"
-                            className="rounded-full"
+                            className="rounded-full object-cover"
                             width={100}
                             height={100}
                         />
                         <Image
                             src="/assets/Logo2.png"
                             alt="LogoEmpresa"
-                            className="rounded-full"
+                            className="rounded-full object-cover"
                             width={100}
                             height={100}
                         />

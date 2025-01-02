@@ -68,7 +68,8 @@ export function CallToAction() {
                                         alt="Ilustración de colaboración"
                                         width={900}
                                         height={900}
-                                        className="w-full max-w-md mx-auto lg:mx-0 object-cover transform hover:scale-105 transition-transform duration-500"
+                                        className=" max-w-sm mx-auto  lg:mx-0 object-cover transform hover:scale-105 transition-transform duration-500"
+                                        priority
                                     />
                                 </div>
 
