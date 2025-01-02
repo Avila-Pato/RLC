@@ -69,6 +69,7 @@ export function CallToAction() {
                                         width={900}
                                         height={900}
                                         className=" max-w-sm mx-auto  lg:mx-0 object-cover transform hover:scale-105 transition-transform duration-500"
+                                        priority
                                     />
                                 </div>
 
