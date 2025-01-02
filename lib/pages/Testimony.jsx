@@ -26,7 +26,7 @@ const sliderSettings = {
     {
       breakpoint: 1291,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 1,
       },
     },
     {
