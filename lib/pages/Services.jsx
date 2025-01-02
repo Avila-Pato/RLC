@@ -17,7 +17,7 @@ export function Services() {
             id="servicios"
             className="container mx-auto w-full md:w-9/12"
         >
-            <p className="tracking-tight text-base md:text-lg lg:text-xl mt-4 mb-16 text-center">
+            <p className="tracking-tight text-base md:text-lg mt-4 mb-16 text-center">
                 Ofrecemos una amplia gama de servicios especializados en
                 ingeniería eléctrica y automatización industrial, brindando
                 soluciones innovadoras y eficientes que optimizan procesos,

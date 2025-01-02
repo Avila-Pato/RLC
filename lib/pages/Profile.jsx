@@ -26,7 +26,7 @@ const Profile = () => {
                         </div>
 
                         <div className="space-y-6">
-                            <p className=" leading-relaxed poppins">
+                            <p className="leading-relaxed text-base md:text-lg ">
                                 Nuestra empresa se especializa en el desarrollo
                                 de software a medida, consultoría tecnológica y
                                 transformación digital. Trabajamos con las
@@ -66,7 +66,7 @@ const Profile = () => {
                     </div>
 
                     {/* Right Column - Sobre Mí */}
-                    <div className="flex items-center shadow-xl">
+                    <div className="flex items-center shadow-xl text-base md:text-lg ">
                         <Card className="w-full  bg-card/50 backdrop-blur-sm  border-primary/10 transform ">
                             <div className="flex flex-col gap-6">
                                 <div className="flex items-center gap-3 p-5">
@@ -88,7 +88,7 @@ const Profile = () => {
                                     />
                                 </div>
 
-                                <p className=" leading-relaxed poppins p-5">
+                                <p className=" leading-relaxed  p-5 ">
                                     Soy un apasionado desarrollador y
                                     emprendedor digital con más de 8 años de
                                     experiencia creando soluciones tecnológicas

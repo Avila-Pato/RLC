@@ -88,7 +88,7 @@ const Clients = () => {
                                 <CardContent>
                                     <div className="relative">
                                         <RiDoubleQuotesR className="text-2xl text-red-600 mx-auto" />
-                                        <CardDescription className="text-center pt-4 text-base poppins">
+                                        <CardDescription className="text-center pt-4 text-base ">
                                             {testimonial.des}
                                         </CardDescription>
                                     </div>

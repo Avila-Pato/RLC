@@ -10,19 +10,19 @@ const Hero = () => {
             className="relative bg-hero bg-cover bg-center bg-no-repeat  px-4 "
         >
             <div className="max-w-7xl mx-auto mt-16 ">
-                <div className="text-left space-y-8">
+                <div className="text-left space-y-8 ">
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight fade-in">
                         Excelencia en Ingeniería{' '}
                         <br className="hidden sm:block" />
                         para tu Éxito
                     </h1>
                     <Zap className="h-12 w-12 text-blue-600 dark:text-blue-400" />
-                    <p className="max-w-2xl text-base md:text-lg lg:text-xl text-white ">
+                    <p className="max-w-2xl text-base md:text-lg text-white ">
                         Ofrecemos soluciones innovadoras de ingeniería que
                         transforman ideas en realidad, entregando resultados
                         excepcionales para nuestros clientes.
                     </p>
-                    <p className="max-w-2xl text-base md:text-lg lg:text-xl text-white mt-4 ">
+                    <p className="max-w-2xl text-base md:text-lg text-white mt-4 ">
                         Innovadora, joven y comprometida. Somos un equipo que
                         apuesta por el futuro con soluciones de vanguardia y un
                         enfoque fresco en todo lo que hacemos. Estamos aquí para
