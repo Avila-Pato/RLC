@@ -18,6 +18,10 @@ export const metadata: Metadata = {
     title: 'RLC ENGINEERING',
     description:
         'Industria especializada en Electricidad Industrial y Automatización',
+        icons: {
+            icon: '/assets/icono.svg',
+            apple: '/apple-touch-icon.svg',
+        }
 }
 
 export default function RootLayout({

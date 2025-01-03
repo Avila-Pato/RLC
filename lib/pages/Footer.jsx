@@ -112,18 +112,26 @@ const Footer = () => {
                     <div className="flex space-x-2 scale-75 sm:scale-90 md:scale-100">
                         <img
                             src="/assets/Logo.png"
-                            alt="LogoEmpresa"
+                            alt="LogoDuoc"
                             className="rounded-full object-cover"
                             width={100}
                             height={100}
+                        />
+                         <img
+                            src="/assets/logoIndustry.png"
+                            alt="LogoEmpresa"
+                            className="rounded-full object-cover"
+                            width={110}
+                            height={110}
                         />
                         <img
                             src="/assets/Logo2.png"
-                            alt="LogoEmpresa"
+                            alt="LogoCertificacion"
                             className="rounded-full object-cover"
                             width={100}
                             height={100}
                         />
+                       
                     </div>
                 </div>
 

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Building2, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -23,7 +23,14 @@ const Navbar = () => {
                         href="#"
                         className="text-white origin-left text-2xl scale-75 font-bold inline-flex items-center gap-2 "
                     >
-                        <Building2 className="h-6 w-6" />
+                        <img 
+                        src="/assets/logoIndustry.png"
+                        alt="logoIndustry"
+                        width={60}
+                        height={60}
+                        className='h-20 w-20 -my-8'
+                         />
+
                         RLC Engineering
                     </a>
 
