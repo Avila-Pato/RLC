@@ -25,7 +25,8 @@ export function CallToAction() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6 }}
                             >
-                                <h2 className="text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 mb-6">
+                                <h2 className="text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r
+                                 from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 mb-9">
                                     Trabajemos Juntos
                                 </h2>
                                 <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl ">
@@ -43,7 +44,9 @@ export function CallToAction() {
                                 >
                                     <Button
                                         size="lg"
-                                        className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white border-0 shadow-lg hover:shadow-xl transition-all group"
+                                        className="bg-gradient-to-r from-blue-600 to-indigo-600
+                                         hover:from-blue-700 hover:to-indigo-700 text-white border-0
+                                          shadow-lg hover:shadow-xl transition-all group"
                                     >
                                         Formulario de Contacto
                                         <ArrowUpRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
