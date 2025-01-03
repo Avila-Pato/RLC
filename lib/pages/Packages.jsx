@@ -68,7 +68,6 @@ export default function Packages() {
                                         <img
                                             src={catalog.thumbnail}
                                             alt={catalog.title}
-                                            fill
                                             className="object-cover transition-transform duration-200 group-hover:scale-110"
                                         />
                                         {/* seccion de la opacidad al pasar el cursor en la imagen  */}
