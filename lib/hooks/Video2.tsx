@@ -42,7 +42,7 @@ const Video2 = () => {
                     ref={videoRef} // Asocia la referencia al video
                     className="w-full h-[260px] md:h-[400px] rounded-xl"
                     controls
-                    autoPlay={false} // No auto-reproduce
+                    autoPlay={true} // No auto-reproduce
                     muted
                     onPlay={handlePlay} // Detecta cuando el video comienza a reproducirse
                     onPause={handlePause} // Detecta cuando el video se pausa
