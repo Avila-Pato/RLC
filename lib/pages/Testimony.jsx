@@ -64,7 +64,7 @@ const Clients = () => {
                 >
                     {TESTIMONIAL.map((testimonial, index) => (
                         <div key={index}>
-                            <Card className="shadow-lg h-72 max-h-72 border-b-4 border-sky-500">
+                            <Card className="shadow-lg  max-h-72 border-b-4 border-sky-500">
                                 {/* Header */}
                                 <CardHeader className="flex items-center justify-between">
                                     <RiDoubleQuotesR className="text-blue-400 mx-auto" />

@@ -88,13 +88,8 @@ const Profile = () => {
                                     />
                                 </div>
 
-                                <p className=" leading-relaxed  p-5 ">
-                                    Soy un apasionado desarrollador y
-                                    emprendedor digital con más de 8 años de
-                                    experiencia creando soluciones tecnológicas
-                                    innovadoras. Mi misión es ayudar a empresas
-                                    a alcanzar su máximo potencial en el mundo
-                                    digital.
+                                <p className=" leading-relaxed  p-3 text-base md:text-lg  ">
+                                Soy un apasionado por la electricidad industrial y la automatización con más de 8 años de experiencia diseñando e implementando soluciones eléctricas innovadoras. Mi misión es ayudar a las empresas a optimizar su infraestructura eléctrica y alcanzar su máximo potencial en eficiencia y sostenimiento.
                                 </p>
                             </div>
                         </Card>
