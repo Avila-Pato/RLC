@@ -6,9 +6,9 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="relative bg-hero bg-cover bg-center bg-no-repeat  px-4 "
+            className="relative bg-hero bg-cover bg-center bg-no-repeat px-4"
         >
-            <div className="container mx-auto py-16 md:py-24 lg:py-32">
+            <div className="container mx-auto py-16 md:py-32">
                 <div className="text-left space-y-8">
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight fade-in">
                         Excelencia en Ingeniería{' '}
@@ -27,19 +27,6 @@ const Hero = () => {
                         enfoque fresco en todo lo que hacemos. Estamos aquí para
                         construir el mañana.
                     </p>
-                    <div className="mb-8"></div>
-                    {/* <Button
-                        id="servicios"
-                        size="lg"
-                        className="px-8"
-                        onClick={() =>
-                            document
-                                .getElementById('servicios')
-                                ?.scrollIntoView({ behavior: 'smooth' })
-                        }
-                    >
-                        Leer más..
-                    </Button> */}
                 </div>
             </div>
             <div className="absolute bottom-0 left-0 right-0  ">

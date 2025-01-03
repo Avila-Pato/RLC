@@ -2,9 +2,11 @@
 
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import useScrollDirection from '../utils/scrolDetect'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const isScrollingUp = useScrollDirection()
 
     const menuItems = [
         { label: 'Inicio', href: '#' },
@@ -15,7 +17,11 @@ const Navbar = () => {
     ]
 
     return (
-        <nav className="fixed w-full z-50 bg-primary/90 backdrop-blur-md py-4  transition-all duration-300">
+        <nav
+            className={`fixed w-full z-50 bg-primary/90 backdrop-blur-md py-4 transition-transform duration-300 ${
+                isScrollingUp ? 'translate-y-0' : '-translate-y-full'
+            }`}
+        >
             <div className="container mx-auto  px-4">
                 <div className="flex justify-between items-center">
                     {/* Logo */}
@@ -23,14 +29,13 @@ const Navbar = () => {
                         href="#"
                         className="text-white origin-left text-2xl scale-75 font-bold inline-flex items-center gap-2 "
                     >
-                        <img 
-                        src="/assets/logoIndustry.png"
-                        alt="logoIndustry"
-                        width={60}
-                        height={60}
-                        className='h-20 w-20 -my-8'
-                         />
-
+                        <img
+                            src="/assets/logoIndustry.png"
+                            alt="Logo RLC Engineering actual de la empresa"
+                            width={60}
+                            height={60}
+                            className="h-20 w-20 -my-8"
+                        />
                         RLC Engineering
                     </a>
 

@@ -8,13 +8,14 @@ const CompanyProfile = () => {
         >
             <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
                 {/* Información de la empresa */}
-                <div className="space-y-6 p-6 w-full lg:w-1/2 ">
-                    <header>
-                        <h2 className="text-3xl font-bold tracking-tight text-blue-600 dark:text-blue-400">
-                            RLC Engineering especializada en Electricidad
-                            Industrial y Automatización
-                        </h2>
-                    </header>
+                <div className="space-y-6 p-6 w-full lg:w-1/2 text-blue-700">
+                    <h1 className="text-4xl font-bold tracking-tight ">
+                        Quienes somos
+                    </h1>
+                    <h2 className="text-3xl font-semibold tracking-tight text-blue-600">
+                        RLC Engineering especializada en Electricidad Industrial
+                        y Automatización
+                    </h2>
 
                     <div className="space-y-4 text-lg leading-relaxed text-gray-800 dark:text-gray-300 ">
                         <p className="text-base md:text-lg  border-l-4 border-blue-600 pl-4">

@@ -52,8 +52,10 @@ export function CallToAction() {
                                           shadow-lg hover:shadow-xl transition-all group "
                                     >
                                         Formulario de Contacto
-                                        <ArrowUpRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1
-                                         group-hover:-translate-y-1" />
+                                        <ArrowUpRight
+                                            className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1
+                                         group-hover:-translate-y-1"
+                                        />
                                     </Button>
                                 </a>
                             </motion.div>
@@ -71,7 +73,7 @@ export function CallToAction() {
                                     <div className="absolute  inset-0 bg-gradient-to-t from-blue-600/20 to-transparent z-10" />
                                     <img
                                         src={imageUrl}
-                                        alt="Ilustración de colaboración"
+                                        alt="Imagen de la hija del jefe de la empresa en un tipo de pradera señalando el cielo"
                                         width={350}
                                         height={960}
                                         className=" max-w-sm mx-auto  lg:mx-0 object-cover transform hover:scale-105

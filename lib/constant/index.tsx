@@ -47,37 +47,36 @@ export const services = [
 
 export const TESTIMONIAL = [
     {
-      name: 'Diego Fernández',
-      profesion: '@codecraftqueen',
-      des: 'La innovación en ingeniería eléctrica y automatización industrial de esta compañía es sobresaliente. Lograron optimizar nuestros procesos y mejorar nuestra productividad de manera impresionante.',
+        name: 'Diego Fernández',
+        profesion: '@codecraftqueen',
+        des: 'La innovación en ingeniería eléctrica y automatización industrial de esta compañía es sobresaliente. Lograron optimizar nuestros procesos y mejorar nuestra productividad de manera impresionante.',
     },
     {
-      name: 'Camila Rojas',
-      profesion: '@designcodepro',
-      des: 'Un equipo joven y comprometido que realmente entiende las necesidades de sus clientes. Su enfoque personalizado marcó una gran diferencia en nuestra colaboración.',
+        name: 'Camila Rojas',
+        profesion: '@designcodepro',
+        des: 'Un equipo joven y comprometido que realmente entiende las necesidades de sus clientes. Su enfoque personalizado marcó una gran diferencia en nuestra colaboración.',
     },
     {
-      name: 'Ignacio Pérez',
-      profesion: '@pixelengineer',
-      des: 'La calidad y profesionalismo de esta compañía exceden las expectativas. Las soluciones implementadas se adaptaron perfectamente a nuestras necesidades específicas.',
+        name: 'Ignacio Pérez',
+        profesion: '@pixelengineer',
+        des: 'La calidad y profesionalismo de esta compañía exceden las expectativas. Las soluciones implementadas se adaptaron perfectamente a nuestras necesidades específicas.',
     },
     {
-      name: 'Valentina Soto',
-      profesion: '@reactwhisperer',
-      des: 'Ofrecen un soporte técnico impecable y soluciones innovadoras. Trabajar con ellos ha sido una experiencia enriquecedora y productiva.',
+        name: 'Valentina Soto',
+        profesion: '@reactwhisperer',
+        des: 'Ofrecen un soporte técnico impecable y soluciones innovadoras. Trabajar con ellos ha sido una experiencia enriquecedora y productiva.',
     },
     {
-      name: 'Francisco Morales',
-      profesion: '@uxalchemy',
-      des: 'Destacan por su compromiso con la excelencia y la innovación. Gracias a su experiencia, logramos resultados increíbles en nuestros proyectos industriales.',
+        name: 'Francisco Morales',
+        profesion: '@uxalchemy',
+        des: 'Destacan por su compromiso con la excelencia y la innovación. Gracias a su experiencia, logramos resultados increíbles en nuestros proyectos industriales.',
     },
-  ];
-  
+]
 
 export const catalogs = [
     {
         id: 1,
-        title: 'Ampolletas',
+        title: 'Variedad de ampolletas Led',
         description: 'Nuevos productos y ofertas especiales',
         thumbnail: '/assets/AmpolletasLed.png',
         pdfUrl: '/AmpolletasRLC.pdf',
@@ -111,9 +110,3 @@ export const catalogs = [
         pdfUrl: '/RevistaCatálogoRLC.pdf',
     },
 ]
-
-
-
-
-
-

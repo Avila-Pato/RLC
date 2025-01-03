@@ -5,13 +5,12 @@ import Slider from 'react-slick'
 import { RiDoubleQuotesR } from 'react-icons/ri'
 
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-} from "../components/ui/card";
-
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+} from '../components/ui/card'
 
 // Configuración de Slider
 const sliderSettings = {
