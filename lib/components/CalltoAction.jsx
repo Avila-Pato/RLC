@@ -11,10 +11,10 @@ export function CallToAction() {
     return (
         <section
             id="contacto"
-            className="container mx-auto  w-full md:w-9/12"
+            className="container  mx-auto  w-full md:w-9/12"
         >
-            <div className="container mx-auto px-4 relative">
-                <Card className="relative overflow-hidden backdrop-blur-xl border-0 shadow-2xl">
+            <div className="container mx-auto  px-4 relative">
+                <Card className="relative overflow-hidden backdrop-blur-xl border-0  shadow-2xl">
                     {/* Fondo cuadriculado dentro de la tarjeta */}
                     <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808022_1px,transparent_1px),linear-gradient(to_bottom,#80808022_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none"></div>
                     <div className="flex flex-col lg:flex-row items-center gap-12 p-8 lg:p-16 relative z-20">
@@ -27,7 +27,7 @@ export function CallToAction() {
                             >
                                 <h2
                                     className="text-4xl pb-5 lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r
-                                 from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 mb-11"
+                                 from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 mb-11 "
                                 >
                                     Trabajemos Juntos
                                 </h2>
@@ -58,21 +58,22 @@ export function CallToAction() {
                         </div>
 
                         {/* Sección de imagen */}
-                        <div className="flex-1 relative">
+                        <div className="flex-1 relative  ">
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.6 }}
                                 className="relative z-10"
                             >
-                                <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                                    <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent z-10" />
+                                <div className="relative rounded-lg  sm:rounded-sm overflow-hidden shadow-2xl">
+                                    <div className="absolute  inset-0 bg-gradient-to-t from-blue-600/20 to-transparent z-10" />
                                     <img
                                         src={imageUrl}
                                         alt="Ilustración de colaboración"
-                                        width={900}
-                                        height={900}
-                                        className=" max-w-sm mx-auto  lg:mx-0 object-cover transform hover:scale-105 transition-transform duration-500"
+                                        width={350}
+                                        height={600}
+                                        className=" max-w-sm mx-auto  lg:mx-0 object-cover transform hover:scale-105
+                                         transition-transform duration-500 "
                                     />
                                 </div>
 
