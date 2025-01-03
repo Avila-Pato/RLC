@@ -63,8 +63,8 @@ export default function Packages() {
                                 className="group h-full flex flex-col overflow-hidden border-2 rounded-xl
                bg-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 transform"
                             >
-                                <CardHeader className="p-0 rounded-t-xl overflow-hidden">
-                                    <div className="relative aspect-[16/9] overflow-hidden">
+                                <CardHeader className="p-0  mx-auto w-full   rounded-t-xl overflow">
+                                    <div className="relative aspect-[12/9] -mt-11 overflow-hidden">
                                         <img
                                             src={catalog.thumbnail}
                                             alt={catalog.title}
