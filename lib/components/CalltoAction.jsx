@@ -25,8 +25,10 @@ export function CallToAction() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6 }}
                             >
-                                <h2 className="text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r
-                                 from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 mb-11">
+                                <h2
+                                    className="text-4xl pb-5 lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r
+                                 from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 mb-11"
+                                >
                                     Trabajemos Juntos
                                 </h2>
                                 <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl ">
