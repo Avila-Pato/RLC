@@ -26,7 +26,8 @@ export function CallToAction() {
                                 transition={{ duration: 0.6 }}
                             >
                                 <h2
-                                    className="text-4xl pb-5 lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r
+                                    className="text-4xl pb-5 lg:text-5xl font-bold bg-clip-text text-transparent
+                                     bg-gradient-to-r
                                  from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 mb-11 "
                                 >
                                     Trabajemos Juntos
@@ -46,12 +47,13 @@ export function CallToAction() {
                                 >
                                     <Button
                                         size="lg"
-                                        className="bg-gradient-to-r from-blue-600 to-indigo-600
+                                        className="bg-gradient-to-r my-2 text-lg  from-blue-600 to-indigo-600
                                          hover:from-blue-700 hover:to-indigo-700 text-white border-0
-                                          shadow-lg hover:shadow-xl transition-all group"
+                                          shadow-lg hover:shadow-xl transition-all group "
                                     >
                                         Formulario de Contacto
-                                        <ArrowUpRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                                        <ArrowUpRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1
+                                         group-hover:-translate-y-1" />
                                     </Button>
                                 </a>
                             </motion.div>
@@ -71,7 +73,7 @@ export function CallToAction() {
                                         src={imageUrl}
                                         alt="Ilustración de colaboración"
                                         width={350}
-                                        height={600}
+                                        height={960}
                                         className=" max-w-sm mx-auto  lg:mx-0 object-cover transform hover:scale-105
                                          transition-transform duration-500 "
                                     />
