@@ -5,7 +5,7 @@ import ElectricHeading from '../components/ElectricHeading'
 const Hero = () => {
     return (
         <section
-            id="home"
+            id="inicio"
             className="relative bg-hero bg-cover bg-center bg-no-repeat px-4"
         >
             <div className="container mx-auto py-16 md:py-32">
