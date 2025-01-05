@@ -17,24 +17,28 @@ const Profile = () => {
                                     Disponible
                                 </div>
                             </div>
-                            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
-                                Transformando Ideas en{' '}
+                            <h1 className="text-4xl sm:text-5xl  lg:text-6xl font-bold tracking-tight leading-tight">
+                                Transformando ideas en soluciones{' '}
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/50">
-                                    Soluciones Digitales
+                                    de electricidad industrial y automatización
                                 </span>
                             </h1>
                         </div>
 
                         <div className="space-y-6">
-                            <p className="leading-relaxed text-base md:text-lg ">
-                            En RLC Engineering, nos especializamos en ofrecer soluciones integrales 
-                            en el ámbito de la electricidad industrial y la automatización. Nuestro 
-                            equipo de expertos combina conocimientos técnicos con experiencia práctica 
-                            para desarrollar e implementar sistemas eléctricos y de automatización de vanguardia 
-                            que optimizan la eficiencia y la productividad de nuestros clientes.
+                            <p className=" text-base md:text-lg leading-relaxed ">
+                                En RLC Engineering, nos especializamos en
+                                ofrecer soluciones integrales en el ámbito de la
+                                electricidad industrial y la automatización.
+                                Nuestro equipo de expertos combina conocimientos
+                                técnicos con experiencia práctica para
+                                desarrollar e implementar sistemas eléctricos y
+                                de automatización de vanguardia que optimizan la
+                                eficiencia y la productividad de nuestros
+                                clientes.
                             </p>
 
-                            <div className="flex  gap-2 md:gap-4  ">
+                            <div className="flex gap-2 md:gap-4  ">
                                 <div className="shadow-xl flex items-center justify-center rounded-full bg-primary/10 p-2 text-primary  w-1/2">
                                     <Shield
                                         className="mr-2 h-5 w-5 "
@@ -91,7 +95,7 @@ const Profile = () => {
                                     />
                                 </div>
 
-                                <p className="p-6 text-lg md:text-xl leading-relaxed text-gray-900 bg-gradient-to-t from-blue-50 to-white border-b-4 border-blue-500 rounded-xl shadow-lg">
+                                <p className="p-6 text-base md:text-lg   border-b-4 border-blue-500 rounded-lg shadow-lg">
                                     Soy un apasionado por la electricidad
                                     industrial y la automatización, con más de 8
                                     años de experiencia diseñando e

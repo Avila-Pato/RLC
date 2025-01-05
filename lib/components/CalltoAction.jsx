@@ -30,13 +30,21 @@ export function CallToAction() {
                                      bg-gradient-to-r
                                  from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 mb-2 "
                                 >
-                                    Trabajemos Juntos
+                                    Trabaja con nosotros
                                 </h2>
-                                <p className="text-base md:text-lg text-gray-800 dark:text-gray-300 mb-8 max-w-2xl "> Únete a RLC Engineering: Liderando el Futuro de la Electricidad Industrial y la Automatización</p>
-
+                                <p className="text-base md:text-lg text-gray-800 dark:text-gray-300 mb-8 max-w-2xl ">
+                                    Únete a RLC Engineering: Liderando el Futuro
+                                    de la Electricidad Industrial y la
+                                    Automatización
+                                </p>
 
                                 <p className="text-base md:text-lg text-gray-800 dark:text-gray-300 mb-8 max-w-2xl ">
-                                En RLC Engineering, creemos en el poder de la innovación y la excelencia. Nos especializamos en ofrecer soluciones avanzadas en electricidad industrial y automatización. Convierte tu visión en realidad con nuestro equipo experto.
+                                    En RLC Engineering, creemos en el poder de
+                                    la innovación y la excelencia. Nos
+                                    especializamos en ofrecer soluciones
+                                    avanzadas en electricidad industrial y
+                                    automatización. Convierte tu visión en
+                                    realidad con nuestro equipo experto.
                                 </p>
                                 <a
                                     href="https://docs.google.com/forms/d/e/1FAIpQLSeGI6aDX04bAWMLSRE2KgGYcIdLAISdONWlzX5qQwH3qZeRag/viewform"

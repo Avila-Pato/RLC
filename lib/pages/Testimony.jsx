@@ -43,11 +43,11 @@ const Clients = () => {
             className="container mx-auto w-full md:w-9/12"
             id="clientes"
         >
-            <div className="text-base md:text-lg   text-center mb-12">
+            <div className=" text-center mb-12">
                 <h3 className="text-4xl font-bold mb-6">
                     Nuestra lista de clientes
                 </h3>
-                <p className="text-lg text-gray-600">
+                <p className="text-base md:text-lg">
                     Desde nuestros inicios, hemos brindado un servicio confiable
                     a nuestra clientela. A lo largo de los años, hemos trabajado
                     con dedicación para entender y satisfacer las necesidades de

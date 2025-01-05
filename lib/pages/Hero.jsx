@@ -15,7 +15,11 @@ const Hero = () => {
                         <br className="hidden sm:block" />
                         para tu Éxito
                     </h1>
-                    <Zap className="h-12 w-12 text-blue-600 dark:text-blue-400" />
+                    <Zap
+                        width={48}
+                        height={48}
+                        className="text-blue-600"
+                    />
                     <p className="max-w-2xl text-base md:text-lg text-white ">
                         Ofrecemos soluciones innovadoras de ingeniería que
                         transforman ideas en realidad, entregando resultados

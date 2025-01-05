@@ -17,7 +17,7 @@ const CompanyProfile = () => {
                         y Automatización
                     </h2>
 
-                    <div className="space-y-4 text-lg leading-relaxed text-gray-800 dark:text-gray-300 ">
+                    <div className="space-y-4 text-gray-800 dark:text-gray-300 ">
                         <p className="text-base md:text-lg  border-l-4 border-blue-600 pl-4">
                             Fundada en ​el año 2023 por estudiantes de Duoc UC
                             Pontificia ​Universidad Católica. Esta compañía se
