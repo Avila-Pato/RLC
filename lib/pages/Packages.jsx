@@ -12,7 +12,7 @@ import { catalogs } from '@/lib/constant'
 import { Button } from '../components/ui/button'
 import { motion } from 'framer-motion'
 
-const container = {
+const containerVariants = {
     hidden: { opacity: 0 },
     show: {
         opacity: 1,
@@ -22,7 +22,7 @@ const container = {
     },
 }
 
-const item = {
+const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0 },
 }
@@ -31,10 +31,11 @@ export default function Packages() {
     return (
         <section
             id="catalogos"
-            className="mx-auto md:w-9/12  sm:w-2/3 xs:w-5/6"
+            className="mx-auto md:w-9/12 sm:w-2/3 xs:w-5/6 py-12"
         >
             <div className="container mx-auto">
-                <div className="space-y-6 text-center mb-12">
+                {/* Header Section */}
+                <div className="text-center space-y-6 mb-12">
                     <div className="inline-block">
                         <BookOpen className="w-12 h-12 mx-auto mb-4 text-primary" />
                         <h1 className="text-4xl font-bold tracking-tight">
@@ -48,51 +49,45 @@ export default function Packages() {
                     </p>
                 </div>
 
+                {/* Catalog Cards */}
                 <motion.div
-                    variants={container}
+                    variants={containerVariants}
                     initial="hidden"
                     animate="show"
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                    role="list"
+                    aria-label="Lista de catálogos"
                 >
                     {catalogs.map((catalog) => (
                         <motion.div
                             key={catalog.id}
-                            variants={item}
+                            variants={itemVariants}
+                            className="group"
                         >
-                            <Card
-                                className="group h-full flex flex-col overflow-hidden border-2 rounded-xl
-               bg-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 transform -my-2"
-                            >
-                                <CardHeader className="p-0  mx-auto w-full   rounded-t-xl overflow">
-                                    <div className="relative aspect-[12/9] -mt-14 overflow-hidden">
+                            <Card className="overflow-hidden border-2 rounded-xl bg-white shadow-lg hover:shadow-xl transition-transform duration-200 transform hover:scale-105">
+                                <CardHeader className="p-0 relative">
+                                    <div className="overflow-hidden group">
                                         <img
                                             src={catalog.thumbnail}
-                                            alt={catalog.title}
-                                            className="object-cover transition-transform duration-200 group-hover:scale-110"
-                                        />
-                                        {/* seccion de la opacidad al pasar el cursor en la imagen  */}
-                                        <div
-                                            className="absolute inset-0 bg-transparent
-                     backdrop-blur-sm backdrop-saturate-200 border
-                      border-white/45 opacity-0 group-hover:bg-opacity-0
-                      transition-opacity duration-200"
+                                            alt={`Thumbnail de ${catalog.title}`}
+                                            className="transition-transform duration-200 group-hover:scale-110 object-cover w-full h-56"
                                         />
                                     </div>
                                 </CardHeader>
-                                <CardContent className="flex-grow p-6">
-                                    <CardTitle className="text-2xl mb-3 -my-4 group-hover:text-primary transition-colors">
+
+                                <CardContent className="p-6 flex-grow">
+                                    <CardTitle className="text-2xl mb-3 group-hover:text-primary transition-colors">
                                         {catalog.title}
                                     </CardTitle>
-                                    <p className="text-muted-foreground my-4 text-gray-950 leading-relaxed">
+                                    <p className="text-muted-foreground text-gray-950 leading-relaxed">
                                         {catalog.description}
                                     </p>
                                 </CardContent>
 
-                                <CardFooter className="p-6 pt-0 gap-4 flex flex-wrap">
+                                <CardFooter className="flex gap-4 flex-wrap">
                                     <Button
                                         variant="outline"
-                                        className="flex-1 mb-2 md:mb-0 hover:bg-primary hover:text-primary-foreground
-                     transition-colors rounded-lg border-2 border-primary"
+                                        className="flex-1 hover:bg-primary hover:text-primary-foreground transition-colors rounded-lg border-2 border-primary"
                                         asChild
                                     >
                                         <a
@@ -100,21 +95,21 @@ export default function Packages() {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            <Eye className="w-4 h-4 mr-2" />
-                                            Ver Catálogo
+                                            <Eye className="w-4 h-4 mr-2" /> Ver
+                                            Catálogo
                                         </a>
                                     </Button>
 
                                     <Button
                                         variant="default"
-                                        className="flex-1 mb-2 md:mb-0 bg-primary hover:bg-primary/90 rounded-lg"
+                                        className="flex-1 bg-primary hover:bg-primary/90 rounded-lg"
                                         asChild
                                     >
                                         <a
                                             href={catalog.pdfUrl}
                                             download
                                         >
-                                            <Download className="w-4 h-4 mr-2" />
+                                            <Download className="w-4 h-4 mr-2" />{' '}
                                             Descargar
                                         </a>
                                     </Button>
