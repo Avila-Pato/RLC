@@ -27,11 +27,11 @@ const Profile = () => {
 
                         <div className="space-y-6">
                             <p className="leading-relaxed text-base md:text-lg ">
-                                Nuestra empresa se especializa en el desarrollo
-                                de software a medida, consultoría tecnológica y
-                                transformación digital. Trabajamos con las
-                                últimas tecnologías para crear soluciones
-                                escalables y eficientes.
+                            En RLC Engineering, nos especializamos en ofrecer soluciones integrales 
+                            en el ámbito de la electricidad industrial y la automatización. Nuestro 
+                            equipo de expertos combina conocimientos técnicos con experiencia práctica 
+                            para desarrollar e implementar sistemas eléctricos y de automatización de vanguardia 
+                            que optimizan la eficiencia y la productividad de nuestros clientes.
                             </p>
 
                             <div className="flex  gap-2 md:gap-4  ">
