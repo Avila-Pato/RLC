@@ -10,6 +10,7 @@ const Video = () => {
     const handlePlayClick = () => {
         if (videoRef.current) {
             videoRef.current.play() // Inicia el video cuando se hace clic
+            setIsPlaying(true) // icono desaparese
         }
     }
 
@@ -44,6 +45,7 @@ const Video = () => {
                     controls
                     autoPlay={true} // No auto-reproduce
                     muted
+                    loop // cuando termina empieza de nuevo
                     onPlay={handlePlay} // Detecta cuando el video comienza a reproducirse
                     onPause={handlePause} // Detecta cuando el video se pausa
                     width={500}

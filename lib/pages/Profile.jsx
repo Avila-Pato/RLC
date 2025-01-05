@@ -3,6 +3,8 @@ import Video2 from '../hooks/Video2'
 import { Card } from '../components/ui/card'
 import { User, Shield, CheckCircle } from 'lucide-react'
 
+
+
 const Profile = () => {
     return (
         <section className="container mx-auto  w-full md:w-9/12 ">
@@ -63,7 +65,7 @@ const Profile = () => {
                         <div className="relative lg:h-[400px]">
                             <div className="absolute rounded-3xl" />
                             <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl border border-primary/10">
-                                <Video2 />
+                                <Video2  />
                                 <div className="absolute " />
                             </div>
                         </div>

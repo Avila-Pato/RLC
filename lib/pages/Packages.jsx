@@ -31,7 +31,7 @@ export default function Packages() {
     return (
         <section
             id="catalogos"
-            className="mx-auto w-full md:w-9/12"
+            className="mx-auto md:w-9/12  sm:w-2/3 xs:w-5/6"
         >
             <div className="container mx-auto">
                 <div className="space-y-6 text-center mb-12">
@@ -61,10 +61,10 @@ export default function Packages() {
                         >
                             <Card
                                 className="group h-full flex flex-col overflow-hidden border-2 rounded-xl
-               bg-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 transform"
+               bg-white shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 transform -my-2"
                             >
                                 <CardHeader className="p-0  mx-auto w-full   rounded-t-xl overflow">
-                                    <div className="relative aspect-[12/9] -mt-11 overflow-hidden">
+                                    <div className="relative aspect-[12/9] -mt-14 overflow-hidden">
                                         <img
                                             src={catalog.thumbnail}
                                             alt={catalog.title}
@@ -80,10 +80,10 @@ export default function Packages() {
                                     </div>
                                 </CardHeader>
                                 <CardContent className="flex-grow p-6">
-                                    <CardTitle className="text-2xl mb-3 group-hover:text-primary transition-colors">
+                                    <CardTitle className="text-2xl mb-3 -my-4 group-hover:text-primary transition-colors">
                                         {catalog.title}
                                     </CardTitle>
-                                    <p className="text-muted-foreground text-gray-900 leading-relaxed">
+                                    <p className="text-muted-foreground my-4 text-gray-900 leading-relaxed">
                                         {catalog.description}
                                     </p>
                                 </CardContent>
