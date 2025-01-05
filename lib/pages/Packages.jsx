@@ -83,7 +83,7 @@ export default function Packages() {
                                     <CardTitle className="text-2xl mb-3 -my-4 group-hover:text-primary transition-colors">
                                         {catalog.title}
                                     </CardTitle>
-                                    <p className="text-muted-foreground my-4 text-gray-900 leading-relaxed">
+                                    <p className="text-muted-foreground my-4 text-gray-950 leading-relaxed">
                                         {catalog.description}
                                     </p>
                                 </CardContent>
