@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import tailwindcssAnimate from 'tailwindcss-animate'
 
 export default {
     darkMode: ['class'],
@@ -57,9 +58,8 @@ export default {
             },
             backgroundImage: {
                 hero: "url('/assets/hero.png')",
-             
             },
-           
+
             screens: {
                 xs: '400px',
                 '3xl': '1680px',
@@ -95,5 +95,5 @@ export default {
             },
         },
     },
-    plugins: [require('tailwindcss-animate')],
+    plugins: [tailwindcssAnimate],
 } satisfies Config
