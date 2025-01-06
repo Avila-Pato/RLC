@@ -4,7 +4,7 @@ const CompanyProfile = () => {
     return (
         <section
             id="nosotros"
-            className="container mx-auto  w-full md:w-9/12 "
+            className="container mx-auto w-full md:w-10/12"
         >
             <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
                 {/* Información de la empresa */}

@@ -3,6 +3,8 @@ import { TESTIMONIAL } from '@/lib/constant'
 import React from 'react'
 import Slider from 'react-slick'
 import { RiDoubleQuotesR } from 'react-icons/ri'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 import {
     Card,
@@ -26,12 +28,14 @@ const sliderSettings = {
             breakpoint: 1291,
             settings: {
                 slidesToShow: 1,
+                dots: true,
             },
         },
         {
             breakpoint: 767,
             settings: {
                 slidesToShow: 1,
+                dots: false,
             },
         },
     ],
@@ -40,7 +44,7 @@ const sliderSettings = {
 const Clients = () => {
     return (
         <section
-            className="container mx-auto w-full md:w-9/12"
+            className="container py-12 w-full md:w-10/12"
             id="clientes"
         >
             <div className=" text-center mb-12">
@@ -59,7 +63,7 @@ const Clients = () => {
             <div className="px-4">
                 <Slider
                     {...sliderSettings}
-                    className="testimonials-slider pb-5 m-5 "
+                    className="testimonials-slider  "
                 >
                     {TESTIMONIAL.map((testimonial, index) => (
                         <div key={index}>

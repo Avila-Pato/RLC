@@ -31,7 +31,7 @@ export default function Packages() {
     return (
         <section
             id="catalogos"
-            className="mx-auto md:w-9/12 sm:w-2/3 xs:w-5/6 py-12"
+            className="mx-auto w-full md:w-10/12"
         >
             <div className="container mx-auto">
                 {/* Header Section */}
@@ -42,7 +42,7 @@ export default function Packages() {
                             Catálogos Digitales
                         </h1>
                     </div>
-                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    <p className="text-base md:text-lg max-w-2xl mx-auto">
                         Explora nuestra exclusiva colección de catálogos
                         digitales. Descubre productos y servicios detallados en
                         formato digital de alta calidad.

@@ -13,7 +13,7 @@ export function Services() {
     return (
         <section
             id="servicios"
-            className="container mx-auto w-full md:w-9/12"
+            className="container mx-auto w-full md:w-9/12 "
         >
             <p className="tracking-tight text-base md:text-lg mt-4 mb-16 text-center">
                 Ofrecemos una amplia gama de servicios especializados en

@@ -11,7 +11,7 @@ export function CallToAction() {
     return (
         <section
             id="contacto"
-            className="container  mx-auto  w-full md:w-9/12"
+            className="container  mx-auto w-full md:w-10/12"
         >
             <div className="container mx-auto  px-4 relative">
                 <Card className="relative overflow-hidden backdrop-blur-xl border-0  shadow-2xl">
